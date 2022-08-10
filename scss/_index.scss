@@ -1,0 +1,60 @@
+@import "_variables.scss";
+/* INICIO  */
+#inicio {
+  background-image: url("../img/");
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  i {
+    opacity: 0.5;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  @include desktop {
+    a {
+      font-size: 1.2rem;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      text-decoration: none;
+      color: $naranja;
+      &:hover {
+        color: $naranja;
+        opacity: 0.7;
+      }
+    }
+  }
+  img{
+    position: absolute;
+  }
+  .cajaEquilibrista{
+  display: flex;
+  height: 60vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  }
+}
+.inicioFondo {
+  height: 100%;
+  position: relative;
+}
+p{
+  font-family: 'Franklin';
+  color: black;
+}
+.btn{
+  background-color: $naranja;
+}
+.card-text{
+  color: black;
+}

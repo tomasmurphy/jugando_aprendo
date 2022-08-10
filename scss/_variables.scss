@@ -1,0 +1,21 @@
+// VARIABLES
+ 
+$principal: #042c28;
+$naranja: #FC971F; 
+$rojo: #EA555E ;
+$rosa: #F18E90;
+$amarillo: #FCE438;
+$verde: #60BFB6;
+
+
+// mixin 
+@mixin desktop {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media screen and (max-width: 767.9px) {
+    @content;
+  }
+}

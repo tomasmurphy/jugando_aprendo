@@ -1,0 +1,133 @@
+@import "_variables.scss";
+/* NAVEGACION */
+.navbar-expand-md .navbar-collapse {
+  justify-content: flex-end;
+  .active{
+    background-color:  $verde;
+    columns: $verde;
+    opacity: .9;
+    border-radius: 2rem;
+    width: auto;
+  }
+  
+}
+.bloqueLogo{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+  padding-left: 56px;
+}
+.fondo{
+  background: white;
+}
+.navbar-bar {align-items: flex-end;
+  
+}
+i{
+  color: $naranja;
+}
+.navbar-dark .navbar-brand {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+  color: $naranja;
+  text-shadow: 0px 1px $principal;
+    
+}
+.navbar-brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  white-space: nowrap;
+ }
+.desaparece{
+  opacity: 0;
+}
+.navbar-dark .navbar-toggler {
+  color: transparent;
+  border-color: transparent;
+  padding-right: 2rem;
+  margin-top: .3rem;
+}
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  a {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    // color: $naranja;
+    margin: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    &:hover {
+      color: $naranja;
+      opacity: .7;
+    }
+    
+    }
+    @include desktop{
+      a {
+        font-size: 1.2rem;
+        margin-right: 2rem;
+        margin-top: .5rem;
+        margin-bottom: 0;
+        margin-left: 0;
+        // color: $naranja;
+    }}
+}
+nav {
+  opacity: 1;
+  position: fixed;
+  display: flex;
+  .sombra {
+    text-shadow: 0px 1px $principal;
+  }
+  a {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: unset;
+  // color: $naranja;
+  margin-right: 2rem;
+  margin-top: .5rem;
+  
+  &:hover {
+    color: $naranja;
+    opacity: .7;
+  }
+  }
+}
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+.naranja{
+  color: $naranja;
+} 
+.rojo{
+  color: $rojo;
+} 
+.rosa{
+  color: $rosa;
+} 
+.amarillo{
+  color: $amarillo;
+} 
+.verde{
+  color: $verde;
+} 

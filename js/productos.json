@@ -1,0 +1,104 @@
+[
+    {
+      "id": 1,
+      "categoria": "Esculturas",
+      "nombre": "Equilibrista",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "precio": 15000,
+      "imagen": "../img/1.jpg",
+      "imagenDos": "imagen",
+      "imagenTres": "imagen"
+    },
+    {
+      "id": 2,
+      "categoria": "Esculturas",
+      "nombre": "Mountro",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "precio": 28000,
+      "imagen": "../img/1.1.jpg"
+    },
+    {
+      "id": 3,
+      "categoria": "Esculturas",
+      "nombre": "Estrellas",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "precio": 10000,
+      "imagen": "../img/1.2.jpg"
+    },
+    {
+      "id": 4,
+      "categoria": "Esculturas",
+      "nombre": "Circulo",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "precio": 8000,
+      "imagen": "../img/2.jpg"
+    },
+    {
+      "id": 5,
+      "categoria": "Fotos",
+      "nombre": "Equilibrista",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "precio": 15000,
+      "imagen": "../img/2.1.jpg",
+      "imagenDos": "imagen",
+      "imagenTres": "imagen"
+    },
+    {
+      "id": 6,
+      "categoria": "Fotos",
+      "nombre": "Mountro",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "precio": 28000,
+      "imagen": "../img/2.2.jpg"
+    },
+    {
+      "id": 7,
+      "categoria": "Fotos",
+      "nombre": "Estrellas",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "precio": 10000,
+      "imagen": "../img/1.2.jpg"
+    },
+    {
+      "id": 8,
+      "categoria": "Fotos",
+      "nombre": "Circulo",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "precio": 8000,
+      "imagen": "../img/2.jpg"
+    },
+    {
+      "id": 9,
+      "categoria": "Pinturas",
+      "nombre": "Equilibrista",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "precio": 15000,
+      "imagen": "../img/1.jpg",
+      "imagenDos": "imagen",
+      "imagenTres": "imagen"
+    },
+    {
+      "id": 10,
+      "categoria": "Pinturas",
+      "nombre": "Mountro",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "precio": 28000,
+      "imagen": "../img/1.1.jpg"
+    },
+    {
+      "id": 11,
+      "categoria": "Pinturas",
+      "nombre": "Estrellas",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "precio": 10000,
+      "imagen": "../img/2.2.jpg"
+    },
+    {
+      "id": 12,
+      "categoria": "Pinturas",
+      "nombre": "Circulo",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "precio": 8000,
+      "imagen": "../img/2.1.jpg"
+    }
+    ]
