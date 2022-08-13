@@ -1,60 +1,75 @@
 @import "_variables.scss";
 /* INICIO  */
 #inicio {
-  background-image: url("../img/");
-  background-position: 0% 0%;
+  background-image: url("..//img/IMG_8774\ 1.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  opacity: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  i {
-    opacity: 0.5;
-    &:hover {
-      opacity: 0.8;
-    }
-  }
-  @include desktop {
-    a {
-      font-size: 1.2rem;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 400;
-      text-decoration: none;
-      color: $naranja;
-      &:hover {
-        color: $naranja;
-        opacity: 0.7;
-      }
-    }
-  }
-  img{
-    position: absolute;
-  }
-  .cajaEquilibrista{
-  display: flex;
-  height: 60vh;
   width: 100%;
-  align-items: center;
-  justify-content: center;
-
+  height: 50vh;
+  left: -6.13px;
+  top: -350.32px;
+}  
+#productos{
+  img{
+    opacity: .5;
+    &:hover{
+opacity: 1;
+    }
   }
 }
-.inicioFondo {
-  height: 100%;
-  position: relative;
+
+// SWEET ALERT
+.titleSweet{
+font-family: "SF Pro";
+font-size: 1rem;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: -0.3333333432674408px;
+text-align: left;
+} 
+.flexSweet{
+  display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    // // align-content: center;
+    padding-left: 2rem;
+  }
+  input{
+    background-color: #A3A3A3;
+    border: none;
+    font-family: "SF Pro";
+font-size: .8rem;
+// font-weight: 700;
+line-height: 40px;
+letter-spacing: -0.3333333432674408px;
+text-align: left;
+border-radius: .5rem;
+  }
+.placeholder{  font-family: SF Pro Text;
+font-size: 14px;
+font-weight: 300;
+line-height: 20px;
+letter-spacing: -0.3333333432674408px;
+text-align: left;
 }
-p{
-  font-family: 'Franklin';
-  color: black;
+.btnSweet{
+  background: linear-gradient(0deg, #E9555E, #E9555E);
+  color:#FFFFFF;
+  ;
+width: 100px;
+height: 33px;
+font-family: SF Pro Text;
+font-size: .8rem;
+font-weight: 600;
+line-height: 17px;
+letter-spacing: -0.3333333432674408px;
+text-align: center;
+border: none;
+border-radius: .5rem;
 }
-.btn{
-  background-color: $naranja;
-}
-.card-text{
-  color: black;
+.borde{
+  border-radius: .5rem;
 }

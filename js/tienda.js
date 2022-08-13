@@ -115,86 +115,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     divProductos.classList.add('card', 'col-12', 'col-sm-6', 'col-md-3');
                     const divProductosCardBody = document.createElement('div');
                     divProductosCardBody.classList.add('card-body');
-                    const divProductosTitle = document.createElement('h5');
-                    divProductosTitle.classList.add('card-title');
-                    divProductosTitle.textContent = info.nombre;
                     const divProductosImagen = document.createElement('img');
                     divProductosImagen.classList.add('img-fluid');
                     divProductosImagen.setAttribute('src', info.imagen);
-                    const divProductosDescripcion = document.createElement('a');
-                    divProductosDescripcion.classList.add('btnInfo');
-                    divProductosDescripcion.setAttribute("id", 'btnInfo')
-                    divProductosDescripcion.textContent = `+ INFO`;
-                    divProductosDescripcion.dataset.id = info.id;
-                    divProductosDescripcion.addEventListener("click", () => {
+                    const divProductosLink = document.createElement('a');
+                    divProductosLink.addEventListener("click", () => {
                         location.replace(`${window.location.pathname}#${info.id}`)
                         traerId();
                     });
-
-                    const divProductosPrecio = document.createElement('p');
-                    divProductosPrecio.classList.add('card-text');
-                    divProductosPrecio.textContent = `$ ${info.precio}`;
-                    const divProductosBoton = document.createElement('button');
-                    divProductosBoton.classList.add('btn');
-                    divProductosBoton.textContent = 'Comprar';
-                    divProductosBoton.setAttribute('marcador', info.id);
-
-                    divProductosBoton.addEventListener("click", () => {
-                        location.replace(`${window.location.pathname}#${info.id}`)
-                            ;
-                    });
-                    divProductosBoton.addEventListener("click", () => {
-                        let userActivo = JSON.parse(localStorage.getItem("user")),
-                            nombreInput = 'placeholder="Nombre completo"',
-                            direccionInput = 'placeholder="direccion"',
-                            cpInput = 'placeholder="cp"';
-                        if (userActivo != null) {
-                            nombreInput = `value="${userActivo.nombre}"`
-                            direccionInput = `value="${userActivo.direccion}"`
-                            cpInput = `value="${userActivo.cp}"`
-                        }
-
-                        Swal.fire({
-                            title: "Ingresa tus datos por favor",
-                            html: `
-                                <input id="input1" class="mx-1 text-center col-11" type="text" ${nombreInput} style="display:block !important;">
-                                <br>
-                                <input id="input4" class="mx-1 text-center col-11"  type="text" ${direccionInput} style="display:block !important;">
-                                <br>
-                                <input id="input5" class="mx-1 text-center col-11"  type="text" ${cpInput}  style="display:block !important;">`,
-                            showCancelButton: true,
-                            confirmButtonText: "Comprar",
-                            cancelButtonText: "Cancelar",
-                            focusConfirm: false,
-                            preConfirm: () => {
-                                const nombre = Swal.getPopup().querySelector('#input1').value
-                                const direccion = Swal.getPopup().querySelector('#input4').value
-                                const cp = Swal.getPopup().querySelector('#input5').value
-                                if (!nombre || !direccion || !cp) {
-                                    Swal.showValidationMessage(`Por favor completa todos los campos`)
-                                }
-                            }
-                        }).then(resultado => {
-                            if (resultado.isConfirmed) {
-                                let nombre = document.getElementById("input1").value,
-                                    direccion = document.getElementById("input4").value,
-                                    cp = document.getElementById("input5").value,
-
-                                    nuevoUsuario = new NuevoUsuario(nombre, direccion, cp);
-                                localStorage.setItem("user", JSON.stringify(nuevoUsuario))
-                                agregarAlCarrito()
-                                let html = `Hola Jugando Aprendo! Quiero comprar ${strProducto}. Mi nombre es 
-                            ${nombre} vivo en ${direccion} y el codigo postal es ${cp}`
-                                window.open(`https://wa.me/+5493416024897/?text='${html}'`, "_blank")
-                            }
-
-                        })
-                    });
-                    divProductosCardBody.appendChild(divProductosTitle);
-                    divProductosCardBody.appendChild(divProductosImagen);
-                    divProductosCardBody.appendChild(divProductosDescripcion);
-                    divProductosCardBody.appendChild(divProductosPrecio);
-                    divProductosCardBody.appendChild(divProductosBoton);
+                    divProductosLink.appendChild(divProductosImagen)
+                    divProductosCardBody.appendChild(divProductosLink);
+                    
                     divProductos.appendChild(divProductosCardBody);
                     crearMain.appendChild(divProductos);
                 });
@@ -218,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     divProductosPrecio.classList.add('card-text');
                     divProductosPrecio.textContent = `$ ${info.precio}`;
                     const divProductosBoton = document.createElement('button');
-                    divProductosBoton.classList.add('btn');
+                    divProductosBoton.classList.add('btn', 'btnSweet');
                     divProductosBoton.textContent = 'Comprar';
                     divProductosBoton.setAttribute('marcador', info.id);
                     divProductosBoton.addEventListener("click", () => {
@@ -237,17 +168,58 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
 
                         Swal.fire({
-                            title: "Ingresa tus datos por favor",
+                            title: `
+                            <img src="../img/logoTexto.svg" alt="">
+                            `,
+                            width: "50rem",
+                            footer: `<img src="../img/footerSweet.svg" class="img-fluid mx-0 px-0" alt="">`,
+                            showLoaderOnConfirm: true,
                             html: `
-                                <input id="input1" class="mx-1 text-center col-11" type="text" ${nombreInput} style="display:block !important;">
-                                <br>
-                                <input id="input4" class="mx-1 text-center col-11"  type="text" ${direccionInput} style="display:block !important;">
-                                <br>
-                                <input id="input5" class="mx-1 text-center col-11"  type="text" ${cpInput}  style="display:block !important;">`,
-                            showCancelButton: true,
-                            confirmButtonText: "Comprar",
-                            cancelButtonText: "Cancelar",
-                            focusConfirm: false,
+                            <div class="container">
+  <div class="row text-center">
+    <div class="col-12 col-md-6">
+      <img src="../img/imgSweet.svg" class="img-fluid borde" alt="">
+    </div>
+  <div class="col-12 col-md-6 flexSweet">
+    <h1 class="titleSweet">Ingresa tus datos</h1>
+    <input
+    id="input1"
+    class="mx-1 btnComprar text-center"
+    type="text"
+    ${nombreInput}
+    style="display: block !important"
+  />
+  <br />
+  <input
+    id="input4"
+    class="mx-1 text-center "
+    type="text"
+    ${direccionInput}
+    style="display: block !important"
+  />
+  <br />
+  <input
+    id="input5"
+    class="mx-1 text-center "
+    type="text"
+    ${cpInput}
+    style="display: block !important"
+  />
+  </div>
+  
+  </div>
+  
+  </div>
+                            `,
+                        showCloseButton: true,
+                          confirmButtonText: "Comprar",
+                          buttonsStyling: false,
+                          padding:"0",
+                          grow: "row",
+                          customClass: {
+                              confirmButton: 'btnSweet'},
+                            
+                            focusConfirm: true,
                             preConfirm: () => {
                                 const nombre = Swal.getPopup().querySelector('#input1').value
                                 const direccion = Swal.getPopup().querySelector('#input4').value
@@ -299,4 +271,5 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     // INICIALIZAR EL FETCH 
     importarProductos()
+    localStorage.clear()
 });

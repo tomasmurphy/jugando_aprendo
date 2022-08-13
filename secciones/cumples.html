@@ -24,7 +24,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../css/animate.css" />
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="icon" type="image/x-icon" href="" />
+    <link rel="icon" type="image/x-icon" href="../img/logoImg.svg" />
   </head>
   <body class="grid">
     <!-- NAV  -->
@@ -34,9 +34,12 @@
     >
       <div class="burgerTop container-fluid mt-3 mt-md-0">
         <div class="bloqueLogo" id="1">
-         
-          <a class="sombra navbar-brand mx-auto"  href="../index.html">
-            <img src="../img/jugandoaprendo_blanco.png" alt="" width="100" class="img-fluid">
+          <a class=""  href="../index.html">
+          
+            <img src="../img/logoImg.svg" alt="" class="me-3 img-fluid">
+            </a>
+            <a class=""  href="../index.html">
+            <img src="../img/logoTexto.svg" alt="" class="img-fluid">
             </a>
         </div>
         <button
@@ -63,30 +66,106 @@
     </nav>
     <!-- SECCION -->
         <!-- SECCION -->
-   <section id="">
-        </section>
-        <!-- SCRIPS  -->
-        <script src="../js/bootstrap.min.js"></script>
-        <script src="../js/sweetalert2.all.min.js"></script>
-    <script src="../js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $("#navbarNavAltMarkup").on("show.bs.collapse", function () {
-        $("#menu").addClass("fondo");
-        $("#1").addClass("desaparece");
-      });
-      $("#navbarNavAltMarkup").on("hidden.bs.collapse", function () {
-        $("#menu").removeClass("fondo");
-        $("#1").removeClass("desaparece");
-      });
-    </script>
-  </body>
-</html>
+        <section class="mt-5">
+          <div class="container text-center my-3">
+            <h2 class="font-weight-light">Bootstrap Multi Slide Carousel</h2>
+            <div class="row mx-auto my-auto justify-content-center">
+                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/31f?text=1" class="img-fluid">
+                                    </div>
+                                    <div class="card-img-overlay">Slide 1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/e66?text=2" class="img-fluid">
+                                    </div>
+                                    <div class="card-img-overlay">Slide 2</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/7d2?text=3" class="img-fluid">
+                                    </div>
+                                    <div class="card-img-overlay">Slide 3</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400?text=4" class="img-fluid">
+                                    </div>
+                                    <div class="card-img-overlay">Slide 4</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/aba?text=5" class="img-fluid">
+                                    </div>
+                                    <div class="card-img-overlay">Slide 5</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/fc0?text=6" class="img-fluid">
+                                    </div>
+                                    <div class="card-img-overlay">Slide 6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <h5 class="mt-2 fw-light">advances one slide at a time</h5>
+        </div>
+      </section>
+      <!-- SCRIPTS  -->
+      <script src="../js/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/bootstrap.min.js.map"></script>
+      
+      <script src="../js/carrusel.js"></script>
+      
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+      ></script>
+      <script>
+        $("#navbarNavAltMarkup").on("show.bs.collapse", function () {
+          $("#menu").addClass("fondo");
+          $("#1").addClass("desaparece");
+        });
+        $("#navbarNavAltMarkup").on("hidden.bs.collapse", function () {
+          $("#menu").removeClass("fondo");
+          $("#1").removeClass("desaparece");
+        });
+      </script>
