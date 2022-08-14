@@ -23,21 +23,15 @@ document.addEventListener('DOMContentLoaded', () => {
         let strProducto = "";
 
         // // EVENTOS BOTONES 
-        btnButton.addEventListener("click", () => {
-            const prueba = abrirCarrito.classList.contains("show");
-            if (prueba === true) {
-                abrirCarrito.classList.remove("show");
-            }
-        })
         btnTodos.addEventListener("click", () => {
             location.replace(`${window.location.pathname}`)
-            
+
             traerId();
 
         });
         btnEsculturas.addEventListener("click", () => {
             location.replace(`${window.location.pathname}#Esculturas`)
-            
+
             traerId();
 
         });
@@ -80,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     btnPinturas.classList.add("activo");
                     btnFotos.classList.add("activo");
                     break;
-                
+
                 case "Esculturas":
                     var productosFiltrados = productos.filter(a => a.categoria === filtro);
                     btnEsculturas.classList.remove("activo");
@@ -112,12 +106,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 // POR CATEGORIA 
                 productosFiltrados.forEach((info) => {
                     const divProductos = document.createElement('div');
-                    divProductos.classList.add('card', 'col-12', 'col-sm-6', 'col-md-3');
+                    divProductos.classList.add('card', 'mx-0', 'px-0', 'col-12', 'col-sm-6', 'col-md-3');
                     const divProductosCardBody = document.createElement('div');
-                    divProductosCardBody.classList.add('card-body');
+                    divProductosCardBody.classList.add('card-body', 'mx-0', 'px-0',);
                     const divProductosImagen = document.createElement('img');
-                    divProductosImagen.classList.add('img-fluid');
-                    divProductosImagen.setAttribute('src', info.imagen);
+                    divProductosImagen.classList.add('img-fluid', 'mx-0', 'px-0',);
+                    divProductosImagen.setAttribute('src', `../img/${info.imagen}`);
                     const divProductosLink = document.createElement('a');
                     divProductosLink.addEventListener("click", () => {
                         location.replace(`${window.location.pathname}#${info.id}`)
@@ -125,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                     divProductosLink.appendChild(divProductosImagen)
                     divProductosCardBody.appendChild(divProductosLink);
-                    
+
                     divProductos.appendChild(divProductosCardBody);
                     crearMain.appendChild(divProductos);
                 });
@@ -141,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     divProductosTitle.textContent = info.nombre;
                     const divProductosImagen = document.createElement('img');
                     divProductosImagen.classList.add('img-fluid', "col-12", "col-md-3");
-                    divProductosImagen.setAttribute('src', info.imagen);
+                    divProductosImagen.setAttribute('src', `../img/${info.imagen}`);
                     const divProductosDescripcion = document.createElement('p');
                     divProductosDescripcion.classList.add('card-text', "col-12", "col-md-5");
                     divProductosDescripcion.textContent = info.descripcion;
@@ -211,14 +205,15 @@ document.addEventListener('DOMContentLoaded', () => {
   
   </div>
                             `,
-                        showCloseButton: true,
-                          confirmButtonText: "Comprar",
-                          buttonsStyling: false,
-                          padding:"0",
-                          grow: "row",
-                          customClass: {
-                              confirmButton: 'btnSweet'},
-                            
+                            showCloseButton: true,
+                            confirmButtonText: "Comprar",
+                            buttonsStyling: false,
+                            padding: "0",
+                            grow: "row",
+                            customClass: {
+                                confirmButton: 'btnSweet'
+                            },
+
                             focusConfirm: true,
                             preConfirm: () => {
                                 const nombre = Swal.getPopup().querySelector('#input1').value
@@ -271,5 +266,4 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     // INICIALIZAR EL FETCH 
     importarProductos()
-    localStorage.clear()
 });

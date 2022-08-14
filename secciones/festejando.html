@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Jugando aprendo > festejando</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="Todos los derechos reservados" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Jugando aprendo" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/animate.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="icon" type="image/x-icon" href="../img/logoImg.svg" />
+  </head>
+  <body class="grid">
+    <!-- NAV  -->
+    <nav
+      id="menu"
+      class="fixed-top cajaNav fondo navbar-dark navbar navbar-expand-md"
+    >
+      <div class="burgerTop container-fluid mt-3 mt-md-0">
+        <div class="bloqueLogo" id="1">
+          <a class="" href="../index.html">
+            <img src="../img/logoImg.svg" alt="" class="me-3 img-fluid" />
+          </a>
+          <a class="" href="../index.html">
+            <img src="../img/logoTexto.svg" alt="" class="img-fluid" />
+          </a>
+        </div>
+        <button
+          id="button"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-flower1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav me-5">
+            <a href="../secciones/conociendonos.html">CONOCIENDONOS</a>
+            <a href="../secciones/jugando.html">JUGANDO</a>
+            <a class="active" href="../secciones/festejando.html">FESTEJANDO</a>
+          </div>
+          <div class="navbar-nav">
+            <a href="../secciones/juegos.html"
+              ><img src="../img/facebook.svg" alt=""
+            /></a>
+            <a href="../secciones/juegos.html"
+              ><img src="../img/instagram.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- SECCION -->
+        <!-- SECCION -->
+        <section id="conociendonos">
+          <div class="row ">
+            <div class="col-12 col-md-6 conociendonos">
+              <img
+              class="img-fluid"
+              src="../img/conociendonos_photo.png"
+              alt="Paula y Gaby"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="conociendonos_texto">
+              <p class="conociendonos_texto_salmon">
+                <strong>Jugando Aprendo</strong> es un proyecto que apunta a brindar
+                herramientas y recursos que potencien y estimulen el desarrollo
+                integral a través del juego.
+      
+                <br /><br />
+                Los juegos están desarrollados para ser utilizados tanto por las
+                familias como por terapeutas (psicólogos, psicopedagogos, ayudantes
+                terapéuticos, entre otros), y explorar las distintas áreas del
+                desarrollo integral.
+              </p>
+      
+              <br /><br />
+      
+              <p class="conociendonos_texto_simple">
+                Todos los productos son hechos a mano y con amor.
+              </p>
+      
+              <br /><br /><br />
+      
+              <p class="nosotras">Nosotras</p>
+      
+              <br /><br />
+      
+              <p class="conociendonos_texto_final">
+                El equipo de jugando aprendo está conformado por Madre e hija. Gaby es
+                maestra jardinera, apasionada por los jardines y los niños, lo cual
+                consideramos que es un plus para nuestro emprendimiento. Es creativa,
+                prolija, con muchas pilas y resuelve cualquier problemita que aparezca
+                para concretar nuestros juegos. Es la encargada de que todos nuestros
+                productos queden tan lindos y prolijos. Y Paula, es licenciada en
+                psicología lo que nos permite que siempre le estemos buscando la
+                vuelta a que cada juego que creamos tenga algún beneficio para la
+                estimulación emocional, lo cognitivo y/o social. Si bien en jugando
+                aprendo hacemos todo las dos, Paula es la que más se encarga de
+                imaginar y crear las ideas, y Gaby es la encargada de concretarlas.
+                Hacemos un gran duo.
+              </p>
+            </div>
+          </div>
+        </div>
+          <!-- ICONO DE WHATSAPP -->
+          <div class="whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=3416024897" target="_blank">
+              <img class="whatsapp-icon" src="../img/whatsapp-icon.png" alt="ícono de whatsapp"></a>
+          </div>
+              </section>
+         
+      <!-- SCRIPTS  -->
+      <script src="../js/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/bootstrap.min.js.map"></script>
+      
+      <script src="../js/carrusel.js"></script>
+      
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+      ></script>
+      <script>
+        $("#navbarNavAltMarkup").on("show.bs.collapse", function () {
+          $("#menu").addClass("fondo");
+          $("#1").addClass("desaparece");
+        });
+        $("#navbarNavAltMarkup").on("hidden.bs.collapse", function () {
+          $("#menu").removeClass("fondo");
+          $("#1").removeClass("desaparece");
+        });
+      </script>

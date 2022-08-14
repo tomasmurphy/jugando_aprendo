@@ -5,7 +5,7 @@
       "nombre": "Equilibrista",
       "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
       "precio": 15000,
-      "imagen": "../img/1.jpg",
+      "imagen": "1.jpg",
       "imagenDos": "imagen",
       "imagenTres": "imagen"
     },
@@ -15,7 +15,7 @@
       "nombre": "Mountro",
       "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
       "precio": 28000,
-      "imagen": "../img/1.1.jpg"
+      "imagen": "1.1.jpg"
     },
     {
       "id": 3,
@@ -23,7 +23,7 @@
       "nombre": "Estrellas",
       "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
       "precio": 10000,
-      "imagen": "../img/1.2.jpg"
+      "imagen": "1.2.jpg"
     },
     {
       "id": 4,
@@ -31,7 +31,7 @@
       "nombre": "Circulo",
       "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
       "precio": 8000,
-      "imagen": "../img/2.jpg"
+      "imagen": "2.jpg"
     },
     {
       "id": 5,
@@ -39,7 +39,7 @@
       "nombre": "Equilibrista",
       "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
       "precio": 15000,
-      "imagen": "../img/2.1.jpg",
+      "imagen": "2.1.jpg",
       "imagenDos": "imagen",
       "imagenTres": "imagen"
     },
@@ -49,7 +49,7 @@
       "nombre": "Mountro",
       "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
       "precio": 28000,
-      "imagen": "../img/2.2.jpg"
+      "imagen": "2.2.jpg"
     },
     {
       "id": 7,
@@ -57,7 +57,7 @@
       "nombre": "Estrellas",
       "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
       "precio": 10000,
-      "imagen": "../img/1.2.jpg"
+      "imagen": "1.2.jpg"
     },
     {
       "id": 8,
@@ -65,7 +65,7 @@
       "nombre": "Circulo",
       "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
       "precio": 8000,
-      "imagen": "../img/2.jpg"
+      "imagen": "2.jpg"
     },
     {
       "id": 9,
@@ -73,7 +73,7 @@
       "nombre": "Equilibrista",
       "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
       "precio": 15000,
-      "imagen": "../img/1.jpg",
+      "imagen": "1.jpg",
       "imagenDos": "imagen",
       "imagenTres": "imagen"
     },
@@ -83,7 +83,7 @@
       "nombre": "Mountro",
       "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
       "precio": 28000,
-      "imagen": "../img/1.1.jpg"
+      "imagen": "1.1.jpg"
     },
     {
       "id": 11,
@@ -91,7 +91,7 @@
       "nombre": "Estrellas",
       "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
       "precio": 10000,
-      "imagen": "../img/2.2.jpg"
+      "imagen": "2.2.jpg"
     },
     {
       "id": 12,
@@ -99,6 +99,6 @@
       "nombre": "Circulo",
       "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
       "precio": 8000,
-      "imagen": "../img/2.1.jpg"
+      "imagen": "2.1.jpg"
     }
     ]

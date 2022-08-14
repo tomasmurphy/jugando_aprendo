@@ -1,18 +1,11 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!-- [if gt IE 8]>      <html class="no-js"> <!--<![endif] -->
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Jugando aprendo</title>
+    <title>Jugando aprendo > festejando</title>
     <meta name="description" content="" />
-    <meta
-      name="keywords"
-      content=""
-    />
+    <meta name="keywords" content="" />
     <meta name="author" content="" />
     <meta name="copyright" content="Todos los derechos reservados" />
     <meta property="og:type" content="article" />
@@ -26,7 +19,7 @@
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="icon" type="image/x-icon" href="../img/logoImg.svg" />
   </head>
-  <body id="top "class="grid">
+  <body class="grid">
     <!-- NAV  -->
     <nav
       id="menu"
@@ -34,13 +27,12 @@
     >
       <div class="burgerTop container-fluid mt-3 mt-md-0">
         <div class="bloqueLogo" id="1">
-          <a class=""  href="../index.html">
-          
-            <img src="../img/logoImg.svg" alt="" class="me-3 img-fluid">
-            </a>
-            <a class=""  href="../index.html">
-            <img src="../img/logoTexto.svg" alt="" class="img-fluid">
-            </a>
+          <a class="" href="../index.html">
+            <img src="../img/logoImg.svg" alt="" class="me-3 img-fluid" />
+          </a>
+          <a class="" href="../index.html">
+            <img src="../img/logoTexto.svg" alt="" class="img-fluid" />
+          </a>
         </div>
         <button
           id="button"
@@ -55,11 +47,54 @@
           <i class="bi bi-flower1"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav sombra">
-            <a class="active" href="./juegos.html">Jugando</a>
-            <a  href="./cumples.html">Festejando</a>
-            <a href="./nosotras.html">Conociendonos</a>
-            
+          <div class="navbar-nav me-5">
+            <li class="nav-item">
+            <a  href="../secciones/conociendonos.html">CONOCIENDONOS</a>
+            </li>
+            <li class="dropdown nav-item">
+            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" 
+            aria-expanded="false"
+            class="active">JUGANDO</a>
+          
+            <ul class="dropdown-menu">
+              <li><a
+                type="button"
+                id="btnTodos"
+                class="btn activo"
+              >Todos</a></li>
+              <li>
+                <a
+              type="button"
+              id="btnEsculturas"
+              class="btn activo"
+              value="Esculturas"
+            >+99</a>
+              </li>
+              <li><a
+                type="button"
+                id="btnPinturas"
+                class="btn activo"
+                value="Pinturas"
+              >+10 años</a></li>
+              <li><a
+                type="button"
+                id="btnFotos"
+                class="btn activo"
+                value="Fotos"
+              >-10 años</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="../secciones/festejando.html">FESTEJANDO</a>
+          </li>
+          </div>
+          <div class="navbar-nav">
+            <a href="../secciones/juegos.html"
+              ><img src="../img/facebook.svg" alt=""
+            /></a>
+            <a href="../secciones/juegos.html"
+              ><img src="../img/instagram.svg" alt=""
+            /></a>
           </div>
         </div>
       </div>
@@ -71,31 +106,12 @@
     
             
     <div class="mt-5">
-      <a
-              type="button"
-              id="btnTodos"
-              class="btn activo"
-            >Todos</a>
-              <a
-              type="button"
-              id="btnEsculturas"
-              class="btn activo"
-              value="Esculturas"
-            >+99</a>
-            <a
-              type="button"
-              id="btnPinturas"
-              class="btn activo"
-              value="Pinturas"
-            >+10 años</a>
-            <a
-              type="button"
-              id="btnFotos"
-              class="btn activo"
-              value="Fotos"
-            >-10 años</a>
+      
+              
+            
+            
           </div>
-          <div class="container-fluid">
+          <div class="mx-0 px-0 container-fluid">
             <div class="row">
               <div class="" id="crearItems"></div>
             </div>

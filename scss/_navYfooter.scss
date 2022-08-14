@@ -3,13 +3,7 @@
 .navbar-expand-md .navbar-collapse {
   justify-content: flex-end;
   margin-right: 12.5%;
-  .active {
-    background-color: $verde;
-    columns: $verde;
-    opacity: 0.9;
-    border-radius: 2rem;
-    width: auto;
-  }
+  
 }
 .bloqueLogo {
   display: flex;
@@ -33,7 +27,7 @@ opacity: .7;
 .navbar-dark .navbar-brand {
   font-family: "SF Pro";
   font-style: normal;
-  font-weight: 590;
+  font-weight: 400;
   font-size: .8rem;
   line-height: 17px;
   text-decoration: none;
@@ -63,7 +57,7 @@ opacity: .7;
   a {
     font-family: "SF Pro";
     font-style: normal;
-    font-weight: 590;
+    font-weight: 400;
     font-size: .8rem;
     line-height: 17px;
     text-decoration: none;
@@ -75,10 +69,25 @@ opacity: .7;
   }
  
 }
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  align-items: flex-start;
+  @include desktop{
+    
+  align-items: center;
+  } 
+}
 nav {
   opacity: 1;
   position: fixed;
   display: flex;
+  .active{
+    font-weight: 700;
+  }
 }
 .navbar > .container,
 .navbar > .container-fluid,

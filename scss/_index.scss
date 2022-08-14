@@ -7,7 +7,7 @@
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
-  height: 50vh;
+  height: 57vh;
   left: -6.13px;
   top: -350.32px;
 }  
@@ -72,4 +72,76 @@ border-radius: .5rem;
 }
 .borde{
   border-radius: .5rem;
+}
+.card-body{
+  padding: 0;
+  img{
+    opacity: .7;
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+// .carousel-item{
+//   // transition: transform 0.3s ease-in-out
+// }
+#conociendonos{
+  margin-top: 5rem;
+  font-size: .8rem;
+  .conociendonos {
+    display: flex;
+    align-items: flex-start;
+  justify-content: center;
+  }
+  
+  
+  
+  .conociendonos_texto {
+    margin-right: 6rem;
+    font-family: 'SF Pro';
+      font-weight: normal;
+      font-style: normal;
+  }
+  
+  .conociendonos_texto_salmon {
+    color: #E9555E;
+    font-size: larger;
+    font-family: 'SF Pro';
+      font-weight: normal;
+      font-style: normal;
+  }
+  
+  .conociendonos_texto_simple {
+    font-size: larger;
+    font-weight: bold;
+  }
+  
+  .nosotras {
+    /* font-weight: bolder; */
+    font-size: x-large;
+    font-family: 'SF Pro';
+      font-weight: bold;
+      font-style: normal;
+  }
+  
+  .conociendonos_texto_final {
+    font-size: larger;
+  }
+}
+.whatsapp {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  z-index: 1;
+  background-color: transparent;
+  a{
+    background-color: transparent;
+    
+  }
+}
+
+.whatsapp-icon {
+  height: 5.5rem;
+  width: auto;
+  background-color: transparent;
 }
