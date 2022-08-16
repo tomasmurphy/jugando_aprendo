@@ -67,11 +67,11 @@
     <!-- INICIO  -->
     <section id="inicio" class=""></section>
     <!-- CARRUSEL  -->
-    <section>
+    <section class="mb-5">
       <div class="prueba container-fluid text-center mx-0 px-0">
         <div class="row mx-0 px-0 justify-content-center">
           <div
-            id="recipeCarousel"
+            id="recipeCarousel1"
             class="mx-0 px-0 carousel slide"
             data-bs-ride="carousel"
           >
@@ -80,7 +80,7 @@
             </div>
             <a
               class="carousel-control-prev w-aut"
-              href="#recipeCarousel"
+              href="#recipeCarousel1"
               role="button"
               data-bs-slide="prev"
             >
@@ -91,7 +91,7 @@
             </a>
             <a
               class="carousel-control-next w-aut"
-              href="#recipeCarousel"
+              href="#recipeCarousel1"
               role="button"
               data-bs-slide="next"
             >
@@ -141,11 +141,20 @@
       </div>
 
        <!-- ICONO DE WHATSAPP -->
-  <div class="whatsapp">
-    <a href="https://api.whatsapp.com/send?phone=3416024897" target="_blank"><img class="whatsapp-icon" src="./img/whatsapp-icon.png" alt="ícono de whatsapp"></a>
-  </div>
+       <div class="whatsapp">
+        <a
+          href="https://api.whatsapp.com/send?phone=3416024897"
+          target="_blank"
+        >
+          <img
+            class="whatsapp-icon"
+            src="./img/whatsapp.svg"
+            alt="ícono de whatsapp"
+        /></a>
+      </div>
+      
     </section>
-
+    <footer></footer>
     <!-- SCRIPTS  -->
     <script src="./js/wow.min.js"></script>
     <script>
@@ -161,11 +170,9 @@
     ></script>
     <script>
       $("#navbarNavAltMarkup").on("show.bs.collapse", function () {
-        $("#menu").addClass("fondo");
         $("#1").addClass("desaparece");
       });
       $("#navbarNavAltMarkup").on("hidden.bs.collapse", function () {
-        $("#menu").removeClass("fondo");
         $("#1").removeClass("desaparece");
       });
     </script>

@@ -7812,9 +7812,7 @@ textarea.form-control-lg {
 
 @font-face {
   font-family: "SF Pro";
-  src: url("../fuentes/SF-Pro-Display-Regular.otf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
+  src: url("../fuentes/SF-Pro.ttf") format("truetype"); }
 
 * {
   margin: 0;
@@ -7822,6 +7820,9 @@ textarea.form-control-lg {
   font-family: "SF Pro"; }
 
 a {
+  color: #000000; }
+
+i {
   color: #000000; }
 
 /* NAVEGACION */
@@ -7849,7 +7850,7 @@ a {
 .navbar-dark .navbar-brand {
   font-family: "SF Pro";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 510;
   font-size: .8rem;
   line-height: 17px;
   text-decoration: none; }
@@ -7879,7 +7880,7 @@ a {
   .navbar-collapse a {
     font-family: "SF Pro";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 510;
     font-size: .8rem;
     line-height: 17px;
     text-decoration: none;
@@ -7894,14 +7895,17 @@ a {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  align-items: center; }
+  align-items: flex-start; }
+  @media screen and (min-width: 768px) {
+    .navbar-nav {
+      align-items: center; } }
 
 nav {
   opacity: 1;
   position: fixed;
   display: flex; }
   nav .active {
-    font-weight: 700; }
+    font-weight: 1000; }
 
 .navbar > .container,
 .navbar > .container-fluid,
@@ -7921,6 +7925,15 @@ nav {
   justify-content: space-between;
   padding: 0;
   text-decoration: none; }
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 3rem;
+  background-image: url("../img/footer.svg");
+  background-repeat: repeat;
+  background-size: cover; }
 
 /* INICIO  */
 #inicio {
@@ -8001,43 +8014,55 @@ input {
   #conociendonos .conociendonos {
     display: flex;
     align-items: flex-start;
-    justify-content: center; }
-  #conociendonos .conociendonos_texto {
-    margin-right: 6rem;
-    font-family: 'SF Pro';
-    font-weight: normal;
-    font-style: normal; }
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 2rem; }
+    @media screen and (min-width: 768px) {
+      #conociendonos .conociendonos {
+        padding-left: 5%;
+        padding-right: 15%; } }
+  #conociendonos .conociendonosFoto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
   #conociendonos .conociendonos_texto_salmon {
     color: #E9555E;
-    font-size: larger;
+    font-size: .8;
     font-family: 'SF Pro';
-    font-weight: normal;
-    font-style: normal; }
+    font-weight: 300; }
+  #conociendonos .conociendonos_texto_salmonFuerte {
+    font-weight: 900; }
   #conociendonos .conociendonos_texto_simple {
-    font-size: larger;
-    font-weight: bold; }
+    font-size: .8;
+    font-weight: 700; }
   #conociendonos .nosotras {
-    /* font-weight: bolder; */
-    font-size: x-large;
+    font-size: .8;
     font-family: 'SF Pro';
-    font-weight: bold;
-    font-style: normal; }
+    font-weight: 900; }
   #conociendonos .conociendonos_texto_final {
-    font-size: larger; }
+    font-size: .8;
+    font-family: 'SF Pro';
+    font-weight: 300; }
+
+.row {
+  --bs-gutter-x: 0; }
 
 .whatsapp {
   position: fixed;
-  right: 5px;
-  bottom: 5px;
+  right: 2rem;
+  bottom: 2rem;
   z-index: 1;
   background-color: transparent; }
   .whatsapp a {
     background-color: transparent; }
 
 .whatsapp-icon {
-  height: 5.5rem;
-  width: auto;
+  width: 80%;
   background-color: transparent; }
+  .whatsapp-icon:hover {
+    width: 100%;
+    opacity: .7; }
 
 @media (max-width: 767px) {
   .carousel-inner .carousel-item > div {

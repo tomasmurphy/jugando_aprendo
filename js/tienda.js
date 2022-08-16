@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // CREAR MAIN DONDE CARGAR PRODUCTOS 
         const crearMain = document.createElement('main');
         crearMain.setAttribute("id", "items")
-        crearMain.classList.add("items", "col-12", "row");
+        crearMain.classList.add("items", "col-12", "row", "mx-0");
         crearItems.appendChild(crearMain);
 
         // FUNCIONES 
@@ -232,9 +232,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                     nuevoUsuario = new NuevoUsuario(nombre, direccion, cp);
                                 localStorage.setItem("user", JSON.stringify(nuevoUsuario))
                                 agregarAlCarrito()
-                                let html = `Hola Jugando Aprendo! Me interesa ${strProducto}. Mi nombre es 
-                            ${nombre} vivo en ${direccion} y el codigo postal es ${cp}`
-                                window.open(`https://wa.me/+5493416024897/?text='${html}'`, "_blank")
+                                let html = `https://api.whatsapp.com/send?phone=+5493416024897&text=Hola%20Jugando%20Aprendo😀!%20Me%20interesa%20el%20juego%20🧩%20${strProducto}.%20Mi%20nombre%20es%20${nombre},%20vivo%20en%20${direccion}%20y%20el%20codigo%20postal%20es%20${cp}❤️`
+                                window.open((html), "_blank")
                             }
 
                         })
@@ -258,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const id = hash.split("#")[1]
             let producto = productos.filter(a => a.id == id)[0]
 
-            strProducto = `${producto.nombre} $${producto.precio}`
+            strProducto = `${producto.nombre} ($${producto.precio})`
 
             return strProducto
         }
