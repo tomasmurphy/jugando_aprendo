@@ -7,15 +7,20 @@
 }
 .bloqueLogo {
   display: flex;
-  align-items: center;
-  flex-direction: row;
-  margin: auto;
-  margin-left: 12.74%;
-  a{ img{
+  align-items: stretch;
+  width: calc(100% - 66px);
+  justify-content: center;
+  padding-left: 66px;
+  img{
     width: 70%;
+    margin: auto;
   &:hover{
 opacity: .7;
-  }}
+  }
+  }
+  @include desktop{
+    padding-left: 12.74%;
+    width: auto;
   }
 }
 .fondo {
@@ -79,6 +84,22 @@ opacity: .7;
   @include desktop{
   align-items: center;
   } 
+  
+}
+.redes{
+  flex-direction: row;
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-top: 2rem;
+  @include desktop{
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0;
+  }
 }
 nav {
   opacity: 1;

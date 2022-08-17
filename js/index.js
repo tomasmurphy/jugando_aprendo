@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         
                     }
                     const divCol = document.createElement('div');
-                    divCol.classList.add('col-md-2');
+                    divCol.classList.add('col-md-3');
                     const divCard = document.createElement('div');
                     divCard.classList.add('card');
                     const divCardImg = document.createElement('div');
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         
                     }
                     const divCol = document.createElement('div');
-                    divCol.classList.add('col-md-2');
+                    divCol.classList.add('col-md-3');
                     const divCard = document.createElement('div');
                     divCard.classList.add('card');
                     const divCardImg = document.createElement('div');
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 let items = document.querySelectorAll('.carousel .carousel-item')
 
     items.forEach((el) => {
-    const minPerSlide = 6
+    const minPerSlide = 4
     let next = el.nextElementSibling
     for (var i=1; i<minPerSlide; i++) {
         if (!next) {

@@ -1,40 +1,147 @@
-<link rel="stylesheet" href="../css/main.css" />
-
-<div class="container-fluid">
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Jugando aprendo 🎁 Festejando</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="Todos los derechos reservados" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Jugando aprendo" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/animate.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="icon" type="image/x-icon" href="../img/logoImg.svg" />
+  </head>
+  <body class="grid">
+    <!-- NAV  -->
+    <nav
+      id="menu"
+      class="fixed-top cajaNav fondo navbar-dark navbar navbar-expand-md"
+    >
+      <div class="burgerTop container-fluid mt-3 mt-md-0">
+        <div class="bloqueLogo" id="1">
+          <a class="" href="../index.html">
+            <img src="../img/logoImg.svg" alt="" class="me-3 img-fluid" />
+          </a>
+          <a class="" href="../index.html">
+            <img src="../img/logoTexto.svg" alt="" class="img-fluid" />
+          </a>
+        </div>
+        <button
+          id="button"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-puzzle"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav me-5">
+            <a href="../secciones/conociendonos.html">CONOCIENDONOS</a>
+            <a href="../secciones/jugando.html">JUGANDO</a>
+            <a class="active" href="../secciones/festejando.html">FESTEJANDO</a>
+          </div>
+          <div class="navbar-nav redes">
+            <a href="https://www.facebook.com/jugandoaprendook" target="_blank"
+            ><img src="../img/facebook.svg" alt=""
+          /></a>
+          <a href="https://www.instagram.com/jugandoaprendook/" target="_blank"
+            ><img src="../img/instagram.svg" alt=""
+          /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+ <!-- SECCION -->
+ <section id="conociendonos">
+  <div class="container-fluid">
   <div class="row">
-    <div class="col-6">
-      <img src="../img/imgSweet.svg" class="img-fluid" alt="">
+    <div class="col-12 col-md-6 conociendonosFoto">
+      <img
+        class="img-fluid"
+        src="../img/1.1.jpg"
+        alt="Paula y Gaby"
+      />
+      <img
+        class="img-fluid"
+        src="../img/2.1.jpg"
+        alt="Paula y Gaby"
+      />
+      <img
+        class="img-fluid"
+        src="../img/1.2.jpg"
+        alt="Paula y Gaby"
+      />
     </div>
-  <div class="col-6 flexSweet">
-    <h1 class="titleSweet">Ingresa tus datos</h1>
-    <input
-    id="input1"
-    class="mx-1 btnComprar text-center"
-    type="text"
-    ${nombreInput}
-    style="display: block !important"
-  />
-  <br />
-  <input
-    id="input4"
-    class="mx-1 text-center "
-    type="text"
-    ${direccionInput}
-    style="display: block !important"
-  />
-  <br />
-  <input
-    id="input5"
-    class="mx-1 text-center "
-    type="text"
-    ${cpInput}
-    style="display: block !important"
-  />
-  </div>
+    <div class="col-12 col-md-6 conociendonos">
+
+      
+      <div class="cajaEdad">
+        <img src="../img/edad.png" alt=""> 
+        <p class="textoEdad">3 a 8 años</p> 
+      </div>
+      <p class="titulo">Emociones</p>
+      <p class="precio">$1400 ARS</p>
+      <p class="texto rojo">
+        Promueve la concentración, la atención, la agudeza visual, la memoria y la coordinación ojo - mano.
+      </p>
+      <p class="subtitulo">Instrucciones</p>
+      <p class="texto">Se saca al azar una ficha con una imagen y los jugadores la buscan en el tablero. El que la vea primero se lleva la ficha. Gana el que más fichas haya conseguido.
+        Se reparten todas las fichas entre los jugadores y comienzan a buscarlas. Gana el primero en quedarse sin fichas.
+        </p>
+      <p class="subtitulo">Contiene</p>
+      <p class="texto">
+        Un tablero / 120 Fichas con una bolsita / Instrucciones.
   
+      </p>
+<a href="" id="btnComprar" class="btn  btnComprarEstilo"> Comprar</a>
   </div>
-  
+</div>
+  <!-- ICONO DE WHATSAPP -->
+  <div class="whatsapp">
+    <a
+      href="https://api.whatsapp.com/send?phone=5492604530612"
+      target="_blank"
+    >
+      <img
+        class="whatsapp-icon"
+        src="../img/whatsapp.svg"
+        alt="ícono de whatsapp"
+    /></a>
   </div>
-  <div class="btnSweet">
-    Comprar
-  </div>
+  <footer></footer>
+</section>
+<!-- SCRIPS  -->
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/sweetalert2.all.min.js"></script>
+<script src="../js/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+<script src="./js/bootstrap.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"
+></script>
+<script>
+  $("#navbarNavAltMarkup").on("show.bs.collapse", function () {
+    $("#1").addClass("desaparece");
+  });
+  $("#navbarNavAltMarkup").on("hidden.bs.collapse", function () {
+    $("#1").removeClass("desaparece");
+  });
+</script>
+</body>
+</html>

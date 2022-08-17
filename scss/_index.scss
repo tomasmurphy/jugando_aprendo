@@ -10,126 +10,143 @@
   height: 57vh;
   left: -6.13px;
   top: -350.32px;
-}  
-#productos{
-  img{
-    opacity: .5;
-    &:hover{
-opacity: 1;
+}
+.opaco {
+  @include desktop {
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
     }
   }
 }
 
 // SWEET ALERT
-.titleSweet{
-font-family: "SF Pro";
-font-size: 1rem;
-font-weight: 700;
-line-height: 40px;
-letter-spacing: -0.3333333432674408px;
-text-align: left;
-} 
-.flexSweet{
+.titleSweet {
+  font-family: "SF Pro";
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -0.3333333432674408px;
+  text-align: left;
+  color: black;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+}
+.flexSweet {
   display: flex !important;
-    flex-direction: column;
-    justify-content: center;
-    // align-items: center;
-    // // align-content: center;
-    padding-left: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  @include desktop {
+    // padding-left: 2rem;
   }
-  input{
-    background-color: #A3A3A3;
-    border: none;
-    font-family: "SF Pro";
-font-size: .8rem;
-// font-weight: 700;
-line-height: 40px;
-letter-spacing: -0.3333333432674408px;
-text-align: left;
-border-radius: .5rem;
+}
+input {
+  background-color: #a3a3a3;
+  border: none;
+  font-family: "SF Pro";
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.3333333432674408px;
+  text-align: left;
+  border-radius: 0.5rem;
+  opacity: 0.5;
+}
+.placeholder {
+  font-family: "SF Pro";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: -0.3333333432674408px;
+  text-align: left;
+}
+.btnComprarEstilo {
+  background: linear-gradient(0deg, #e9555e, #e9555e);
+  color: #ffffff;
+  width: 100px;
+  height: 33px;
+  font-family: "SF Pro";
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: -0.3333333432674408px;
+  text-align: center;
+  border: none;
+  border-radius: 0.5rem;
+  &:hover {
+    color: white;
+    opacity: 0.7;
   }
-.placeholder{  font-family: SF Pro Text;
-font-size: 14px;
-font-weight: 300;
-line-height: 20px;
-letter-spacing: -0.3333333432674408px;
-text-align: left;
 }
-.btnSweet{
-  background: linear-gradient(0deg, #E9555E, #E9555E);
-  color:#FFFFFF;
-  ;
-width: 100px;
-height: 33px;
-font-family: SF Pro Text;
-font-size: .8rem;
-font-weight: 600;
-line-height: 17px;
-letter-spacing: -0.3333333432674408px;
-text-align: center;
-border: none;
-border-radius: .5rem;
+.borde {
+  border-radius: 0.5rem;
+  width: 70%;
 }
-.borde{
-  border-radius: .5rem;
-}
-.card-body{
+.card-body {
   padding: 0;
-  img{
-    opacity: .7;
-    &:hover{
-      opacity: 1;
+}
+.carousel-item {
+  transition: transform 0.6s linear;
+  img {
+    @include desktop {
+      opacity: 0.5;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }
-// .carousel-item{
-//   // transition: transform 0.3s ease-in-out
-// }
-#conociendonos{
-  margin-top: 5rem;
-  font-size: .8rem;
+#conociendonos {
+  margin-top: 4.1rem;
+  font-size: 0.8rem;
   .conociendonos {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  flex-direction: column;
-  padding: 2rem;
-  @include desktop{
-    padding-left: 5%;
-    padding-right: 15%;
-  }
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    @include desktop {
+      padding-left: 5%;
+      padding-right: 15%;
+      position: sticky;
+      top: 5rem;
+    }
   }
   .conociendonosFoto {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    img {
+      margin-bottom: 3rem;
     }
-  
-  .conociendonos_texto_salmon {
-    color: #E9555E;
-    font-size: .8;
-    font-family: 'SF Pro';
-      font-weight: 300;
   }
-  .conociendonos_texto_salmonFuerte{
+
+  .conociendonos_texto_salmon {
+    color: #e9555e;
+    font-size: 0.8;
+    font-family: "SF Pro";
+    font-weight: 300;
+  }
+  .conociendonos_texto_salmonFuerte {
     font-weight: 900;
   }
-  
+
   .conociendonos_texto_simple {
-    font-size: .8;
+    font-size: 0.8;
     font-weight: 700;
   }
-  
+
   .nosotras {
-    font-size: .8;
-    font-family: 'SF Pro';
+    font-size: 0.8;
+    font-family: "SF Pro";
     font-weight: 900;
   }
-  
+
   .conociendonos_texto_final {
-    font-size: .8;
-    font-family: 'SF Pro';
+    font-size: 0.8;
+    font-family: "SF Pro";
     font-weight: 300;
   }
 }
@@ -138,21 +155,77 @@ border-radius: .5rem;
 }
 .whatsapp {
   position: fixed;
-  right: 2rem;
+  right: 0.7rem;
   bottom: 2rem;
   z-index: 1;
   background-color: transparent;
-  a{
+  a {
     background-color: transparent;
-    
+  }
+  @include desktop {
+    right: 2rem;
   }
 }
 
 .whatsapp-icon {
- width: 80%;
   background-color: transparent;
-  &:hover{
-    width: 100%;
-    opacity: .7;
+  transition: all 0.4s ease;
+  &:hover {
+    transform: scale(1.5);
+    opacity: 0.7;
   }
+}
+
+// PRODUCTO
+.textoEdad {
+  font-family: "SF Pro";
+  font-size: 0.8rem;
+  text-align: left;
+  letter-spacing: -0.33px;
+  font-weight: 300;
+  color: #717171;
+}
+.titulo {
+  font-family: "SF Pro Text";
+  font-size: 1.5rem;
+  text-align: left;
+  letter-spacing: -0.33px;
+  font-weight: 900;
+}
+.precio {
+  font-family: "SF Pro";
+  font-size: 1rem;
+  text-align: left;
+  letter-spacing: -0.33px;
+  font-weight: 700;
+}
+.texto {
+  font-family: "SF Pro";
+  font-size: 0.8rem;
+  text-align: left;
+  letter-spacing: -0.33px;
+  font-weight: 300;
+}
+.rojo {
+  color: #e9555e;
+}
+.subtitulo {
+  font-family: "SF Pro";
+  font-size: 0.9rem;
+  text-align: left;
+  letter-spacing: -0.33px;
+  font-weight: 700;
+}
+.cajaEdad{
+  display: flex;
+  flex-direction: row;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    p{
+      margin-bottom: 0;
+      margin-left: .5rem;
+    }
+  
 }

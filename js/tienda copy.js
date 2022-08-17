@@ -126,55 +126,24 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 // POR ID 
                 productosFiltrados.forEach((info) => {
-                    const contenedor = document.createElement('div');
-                    contenedor.classList.add('conteiner-fluid');
-                    const row = document.createElement('div');
-                    row.classList.add("row");
-                    const cajaFoto = document.createElement('div')
-                    cajaFoto.classList.add('col-12','col-md-6','conociendonosFoto')
-                    const img1 = document.createElement('img');
-                    img1.classList.add('img-fluid');
-                    img1.setAttribute('src', `../img/${info.imagen}`);
-                    const img2 = document.createElement('img');
-                    img2.classList.add('img-fluid');
-                    img2.setAttribute('src', `../img/${info.imagen}`);
-                    const img3 = document.createElement('img');
-                    img3.classList.add('img-fluid');
-                    img3.setAttribute('src', `../img/${info.imagen}`);
-                    const cajaProducto = document.createElement('div')
-                    cajaProducto.classList.add('col-12','col-md-6','conociendonos')
-                    const cajaEdad = document.createElement('div')
-                    cajaEdad.classList.add('cajaEdad')
-                    const edad = document.createElement('p');
-                    edad.classList.add('textoEdad');
-                    edad.textContent = `3 a 8 años`;
-                    const edadImg = document.createElement('img');
-                    edadImg.setAttribute('src', `../img/edad.png`);
-                    const titulo = document.createElement('p');
-                    titulo.classList.add('titulo');
-                    titulo.textContent = `${info.nombre}`;
-                    const precio = document.createElement('p');
-                    precio.classList.add('precio');
-                    precio.textContent = `$${info.precio} ARS`;
-                    const textoRojo = document.createElement('p');
-                    textoRojo.classList.add('texto','rojo');
-                    textoRojo.textContent = `${info.descripcion}`;
-                    const subInstrucciones = document.createElement('p');
-                    subInstrucciones.classList.add('subtitulo');
-                    subInstrucciones.textContent = `Instrucciones`;
-                    const subContiene = document.createElement('p');
-                    subContiene.classList.add('subtitulo');
-                    subContiene.textContent = `Contiene`;
-                    const texto = document.createElement('p');
-                    texto.classList.add('texto');
-                    texto.textContent = `${info.descripcion}`;
-                    const textoContiene = document.createElement('p');
-                    textoContiene.classList.add('texto');
-                    textoContiene.textContent = `${info.descripcion}`;
-
-
+                    const divProductos = document.createElement('div');
+                    divProductos.classList.add('card', 'col-12');
+                    const divProductosCardBody = document.createElement('div');
+                    divProductosCardBody.classList.add('card-body', "row");
+                    const divProductosTitle = document.createElement('h5');
+                    divProductosTitle.classList.add('card-title');
+                    divProductosTitle.textContent = info.nombre;
+                    const divProductosImagen = document.createElement('img');
+                    divProductosImagen.classList.add('img-fluid', "col-12", "col-md-3");
+                    divProductosImagen.setAttribute('src', `../img/${info.imagen}`);
+                    const divProductosDescripcion = document.createElement('p');
+                    divProductosDescripcion.classList.add('card-text', "col-12", "col-md-5");
+                    divProductosDescripcion.textContent = info.descripcion;
+                    const divProductosPrecio = document.createElement('p');
+                    divProductosPrecio.classList.add('card-text');
+                    divProductosPrecio.textContent = `$ ${info.precio}`;
                     const divProductosBoton = document.createElement('button');
-                    divProductosBoton.classList.add('btn', 'mb-5', 'btnComprarEstilo');
+                    divProductosBoton.classList.add('btn', 'btnComprarEstilo');
                     divProductosBoton.textContent = 'Comprar';
                     divProductosBoton.setAttribute('marcador', info.id);
                     divProductosBoton.addEventListener("click", () => {
@@ -263,33 +232,20 @@ document.addEventListener('DOMContentLoaded', () => {
                                     nuevoUsuario = new NuevoUsuario(nombre, direccion, cp);
                                 localStorage.setItem("user", JSON.stringify(nuevoUsuario))
                                 agregarAlCarrito()
-                                let html = `https://api.whatsapp.com/send?phone=5492604530612&text=Hola%20Jugando%20Aprendo😀!%20Me%20interesa%20el%20juego%20🧩%20${strProducto}.%20Mi%20nombre%20es%20${nombre},%20vivo%20en%20${direccion}%20y%20el%20codigo%20postal%20es%20${cp}❤️`
+                                let html = `https://api.whatsapp.com/send?phone=+5493416024897&text=Hola%20Jugando%20Aprendo😀!%20Me%20interesa%20el%20juego%20🧩%20${strProducto}.%20Mi%20nombre%20es%20${nombre},%20vivo%20en%20${direccion}%20y%20el%20codigo%20postal%20es%20${cp}❤️`
                                 window.open((html), "_blank")
                             }
 
                         })
                     });
 
-                    cajaFoto.appendChild(img1)
-                    cajaFoto.appendChild(img2)
-                    cajaFoto.appendChild(img3)
-                    cajaEdad.appendChild(edadImg)
-                    cajaEdad.appendChild(edad)
-                    cajaProducto.appendChild(cajaEdad)
-                    cajaProducto.appendChild(titulo)
-                    cajaProducto.appendChild(precio)
-                    cajaProducto.appendChild(textoRojo)
-                    cajaProducto.appendChild(subInstrucciones)
-                    cajaProducto.appendChild(texto)
-                    cajaProducto.appendChild(subContiene)
-                    cajaProducto.appendChild(textoContiene)
-                    cajaProducto.appendChild(divProductosBoton)
-                    
-                    row.appendChild(cajaFoto)
-                    row.appendChild(cajaProducto)
-                    contenedor.appendChild(row)
-                    crearMain.appendChild(contenedor)
-                    ;
+                    divProductosCardBody.appendChild(divProductosTitle);
+                    divProductosCardBody.appendChild(divProductosImagen);
+                    divProductosCardBody.appendChild(divProductosDescripcion);
+                    divProductosCardBody.appendChild(divProductosPrecio);
+                    divProductosCardBody.appendChild(divProductosBoton);
+                    divProductos.appendChild(divProductosCardBody);
+                    crearMain.appendChild(divProductos);
 
                 });
             }

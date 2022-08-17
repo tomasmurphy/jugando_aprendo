@@ -7814,10 +7814,15 @@ textarea.form-control-lg {
   font-family: "SF Pro";
   src: url("../fuentes/SF-Pro.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../fuentes/SF-Pro-Text-Regular.otf") format("truetype"); }
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "SF Pro"; }
+  font-family: "SF Pro";
+  letter-spacing: -0.33px; }
 
 a {
   color: #000000; }
@@ -7832,14 +7837,19 @@ i {
 
 .bloqueLogo {
   display: flex;
-  align-items: center;
-  flex-direction: row;
-  margin: auto;
-  margin-left: 12.74%; }
-  .bloqueLogo a img {
-    width: 70%; }
-    .bloqueLogo a img:hover {
+  align-items: stretch;
+  width: calc(100% - 66px);
+  justify-content: center;
+  padding-left: 66px; }
+  .bloqueLogo img {
+    width: 70%;
+    margin: auto; }
+    .bloqueLogo img:hover {
       opacity: .7; }
+  @media screen and (min-width: 768px) {
+    .bloqueLogo {
+      padding-left: 12.74%;
+      width: auto; } }
 
 .fondo {
   background: white; }
@@ -7900,6 +7910,21 @@ i {
     .navbar-nav {
       align-items: center; } }
 
+.redes {
+  flex-direction: row;
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-top: 2rem; }
+  @media screen and (min-width: 768px) {
+    .redes {
+      align-items: center;
+      flex-direction: column;
+      margin-top: 0; } }
+
 nav {
   opacity: 1;
   position: fixed;
@@ -7947,102 +7972,120 @@ footer {
   left: -6.13px;
   top: -350.32px; }
 
-#productos img {
-  opacity: .5; }
-  #productos img:hover {
-    opacity: 1; }
+@media screen and (min-width: 768px) {
+  .opaco {
+    opacity: 0.5; }
+    .opaco:hover {
+      opacity: 1; } }
 
 .titleSweet {
   font-family: "SF Pro";
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 40px;
   letter-spacing: -0.3333333432674408px;
-  text-align: left; }
+  text-align: left;
+  color: black;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem; }
 
 .flexSweet {
   display: flex !important;
   flex-direction: column;
-  justify-content: center;
-  padding-left: 2rem; }
+  justify-content: center; }
 
 input {
-  background-color: #A3A3A3;
+  background-color: #a3a3a3;
   border: none;
   font-family: "SF Pro";
-  font-size: .8rem;
+  font-size: 0.8rem;
+  font-weight: 700;
   line-height: 40px;
   letter-spacing: -0.3333333432674408px;
   text-align: left;
-  border-radius: .5rem; }
+  border-radius: 0.5rem;
+  opacity: 0.5; }
 
 .placeholder {
-  font-family: SF Pro Text;
+  font-family: "SF Pro";
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
   letter-spacing: -0.3333333432674408px;
   text-align: left; }
 
-.btnSweet {
-  background: linear-gradient(0deg, #E9555E, #E9555E);
-  color: #FFFFFF;
+.btnComprarEstilo {
+  background: linear-gradient(0deg, #e9555e, #e9555e);
+  color: #ffffff;
   width: 100px;
   height: 33px;
-  font-family: SF Pro Text;
-  font-size: .8rem;
-  font-weight: 600;
+  font-family: "SF Pro";
+  font-size: 0.8rem;
+  font-weight: 400;
   line-height: 17px;
   letter-spacing: -0.3333333432674408px;
   text-align: center;
   border: none;
-  border-radius: .5rem; }
+  border-radius: 0.5rem; }
+  .btnComprarEstilo:hover {
+    color: white;
+    opacity: 0.7; }
 
 .borde {
-  border-radius: .5rem; }
+  border-radius: 0.5rem;
+  width: 70%; }
 
 .card-body {
   padding: 0; }
-  .card-body img {
-    opacity: .7; }
-    .card-body img:hover {
-      opacity: 1; }
+
+.carousel-item {
+  transition: transform 0.6s linear; }
+  @media screen and (min-width: 768px) {
+    .carousel-item img {
+      opacity: 0.5; }
+      .carousel-item img:hover {
+        opacity: 1; } }
 
 #conociendonos {
-  margin-top: 5rem;
-  font-size: .8rem; }
+  margin-top: 4.1rem;
+  font-size: 0.8rem; }
   #conociendonos .conociendonos {
+    height: 100%;
     display: flex;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
-    padding: 2rem; }
+    margin-bottom: 2rem; }
     @media screen and (min-width: 768px) {
       #conociendonos .conociendonos {
         padding-left: 5%;
-        padding-right: 15%; } }
+        padding-right: 15%;
+        position: sticky;
+        top: 5rem; } }
   #conociendonos .conociendonosFoto {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column; }
+    #conociendonos .conociendonosFoto img {
+      margin-bottom: 3rem; }
   #conociendonos .conociendonos_texto_salmon {
-    color: #E9555E;
-    font-size: .8;
-    font-family: 'SF Pro';
+    color: #e9555e;
+    font-size: 0.8;
+    font-family: "SF Pro";
     font-weight: 300; }
   #conociendonos .conociendonos_texto_salmonFuerte {
     font-weight: 900; }
   #conociendonos .conociendonos_texto_simple {
-    font-size: .8;
+    font-size: 0.8;
     font-weight: 700; }
   #conociendonos .nosotras {
-    font-size: .8;
-    font-family: 'SF Pro';
+    font-size: 0.8;
+    font-family: "SF Pro";
     font-weight: 900; }
   #conociendonos .conociendonos_texto_final {
-    font-size: .8;
-    font-family: 'SF Pro';
+    font-size: 0.8;
+    font-family: "SF Pro";
     font-weight: 300; }
 
 .row {
@@ -8050,19 +8093,72 @@ input {
 
 .whatsapp {
   position: fixed;
-  right: 2rem;
+  right: 0.7rem;
   bottom: 2rem;
   z-index: 1;
   background-color: transparent; }
   .whatsapp a {
     background-color: transparent; }
+  @media screen and (min-width: 768px) {
+    .whatsapp {
+      right: 2rem; } }
 
 .whatsapp-icon {
-  width: 80%;
-  background-color: transparent; }
+  background-color: transparent;
+  transition: all 0.4s ease; }
   .whatsapp-icon:hover {
-    width: 100%;
-    opacity: .7; }
+    transform: scale(1.5);
+    opacity: 0.7; }
+
+.textoEdad {
+  font-family: "SF Pro";
+  font-size: 0.8rem;
+  text-align: left;
+  letter-spacing: -0.33px;
+  font-weight: 300;
+  color: #717171; }
+
+.titulo {
+  font-family: "SF Pro Text";
+  font-size: 1.5rem;
+  text-align: left;
+  letter-spacing: -0.33px;
+  font-weight: 900; }
+
+.precio {
+  font-family: "SF Pro";
+  font-size: 1rem;
+  text-align: left;
+  letter-spacing: -0.33px;
+  font-weight: 700; }
+
+.texto {
+  font-family: "SF Pro";
+  font-size: 0.8rem;
+  text-align: left;
+  letter-spacing: -0.33px;
+  font-weight: 300; }
+
+.rojo {
+  color: #e9555e; }
+
+.subtitulo {
+  font-family: "SF Pro";
+  font-size: 0.9rem;
+  text-align: left;
+  letter-spacing: -0.33px;
+  font-weight: 700; }
+
+.cajaEdad {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem; }
+  .cajaEdad p {
+    margin-bottom: 0;
+    margin-left: .5rem; }
 
 @media (max-width: 767px) {
   .carousel-inner .carousel-item > div {
