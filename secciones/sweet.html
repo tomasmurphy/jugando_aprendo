@@ -65,9 +65,76 @@
     </nav>
  <!-- SECCION -->
  <section id="conociendonos">
+  <!-- Button trigger modal -->
+<img width="100"  data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal" src="../img/1.2.jpg">
+<img width="100" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal" src="../img/1.2.jpg">
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+         
+  
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
   <div class="container-fluid">
-  <div class="row">
-    <div class="col-12 col-md-6 conociendonosFoto">
+  <div class="row maxDesk">
+    <div id="btnModal" class="col-12 col-md-6 conociendonosFoto">
+      <div class="d-md-none justify-content-center">
+      <div
+      id="recipeCarousel1"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner" id="crearCarruselUno" role="listbox">
+        <img
+        class="carousel-item active img-fluid"
+        src="../img/1.1.jpg"
+        alt="Paula y Gaby"
+        
+      />
+      <img
+        class="img-fluid carousel-item"
+        src="../img/2.1.jpg"
+        alt="Paula y Gaby"
+      />
+      <img
+        class="img-fluid carousel-item"
+        src="../img/1.2.jpg"
+        alt="Paula y Gaby"
+      />
+      </div>
+      
+      <a
+        class="carousel-control-prev w-aut"
+        href="#recipeCarousel1"
+        role="button"
+        data-bs-slide="prev"
+      >
+        <span
+          class="carousel-control-prev-icon bg-transparent"
+          aria-hidden="true"
+        ></span>
+      </a>
+      <a
+        class="carousel-control-next w-aut"
+        href="#recipeCarousel1"
+        role="button"
+        data-bs-slide="next"
+      >
+        <span
+          class="carousel-control-next-icon bg-transparent"
+          aria-hidden="true"
+        ></span>
+      </a>
+    </div>
+</div>
+<div class="d-none d-md-block">
       <img
         class="img-fluid"
         src="../img/1.1.jpg"
@@ -83,6 +150,7 @@
         src="../img/1.2.jpg"
         alt="Paula y Gaby"
       />
+    </div>
     </div>
     <div class="col-12 col-md-6 conociendonos">
 
@@ -108,6 +176,69 @@
 <a href="" id="btnComprar" class="btn  btnComprarEstilo"> Comprar</a>
   </div>
 </div>
+
+    
+    <!-- Modal -->
+    <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content ">
+            
+            <div class="modal-body ">
+              <div class="container-fluid modalContainer">
+                <div
+                id="recipeCarousel2"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner" id="crearCarruselUno" role="listbox">
+                  <img
+                  class="carousel-item active img-fluid"
+                  src="../img/1.1.jpg"
+                  alt="Paula y Gaby"
+                />
+                <img
+                  class="img-fluid carousel-item"
+                  src="../img/2.1.jpg"
+                  alt="Paula y Gaby"
+                />
+                <img
+                  class="img-fluid carousel-item"
+                  src="../img/1.2.jpg"
+                  alt="Paula y Gaby"
+                />
+                </div>
+                
+                <a
+                  class="carousel-control-prev w-aut"
+                  href="#recipeCarousel1"
+                  role="button"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon bg-transparent"
+                    aria-hidden="true"
+                  ></span>
+                </a>
+                <a
+                  class="carousel-control-next w-aut"
+                  href="#recipeCarousel2"
+                  role="button"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon bg-transparent"
+                    aria-hidden="true"
+                  ></span>
+                </a>
+              </div>
+            
+            </div>
+            </div>
+        </div>
+    </div>
+    
+
   <!-- ICONO DE WHATSAPP -->
   <div class="whatsapp">
     <a
@@ -130,18 +261,15 @@
   new WOW().init();
 </script>
 <script src="./js/bootstrap.min.js"></script>
+<script src="../js/btnBurger.js"></script>
+
 <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
   crossorigin="anonymous"
 ></script>
 <script>
-  $("#navbarNavAltMarkup").on("show.bs.collapse", function () {
-    $("#1").addClass("desaparece");
-  });
-  $("#navbarNavAltMarkup").on("hidden.bs.collapse", function () {
-    $("#1").removeClass("desaparece");
-  });
 </script>
+
 </body>
 </html>

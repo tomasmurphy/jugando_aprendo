@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const crearItems = document.querySelector('#crearItems');
         const btnButton = document.querySelector("#button");
         let strProducto = "";
+       
+  
 
         // // EVENTOS BOTONES 
         btnTodos.addEventListener("click", () => {
@@ -126,19 +128,145 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 // POR ID 
                 productosFiltrados.forEach((info) => {
+                    const carruselProducto = `<div class="d-md-none justify-content-center">
+                    <div
+                    id="recipeCarousel1"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-inner" id="crearCarruselUno" role="listbox">
+                      <img
+                      class="carousel-item active img-fluid"
+                      src="../img/${info.imagen}"
+                      alt="Paula y Gaby"
+                      data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal"
+                    />
+                    <img
+                      class="img-fluid carousel-item"
+                      src="../img/${info.imagen}"
+                      alt="Paula y Gaby"
+                      data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal"
+                      />
+                    <img
+                      class="img-fluid carousel-item"
+                      src="../img/${info.imagen}"
+                      alt="Paula y Gaby"
+                      data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal"
+                    />
+                    </div>
+                    
+                    <a
+                      class="carousel-control-prev w-aut"
+                      href="#recipeCarousel1"
+                      role="button"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon bg-transparent"
+                        aria-hidden="true"
+                      ></span>
+                    </a>
+                    <a
+                      class="carousel-control-next w-aut"
+                      href="#recipeCarousel1"
+                      role="button"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon bg-transparent"
+                        aria-hidden="true"
+                      ></span>
+                    </a>
+                  </div>
+              </div>`
+       const carruselModal = `<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  
+
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content ">
+            
+            <div class="modal-body ">
+              <div class="container-fluid modalContainer">
+                <div
+                id="recipeCarousel2"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner" id="crearCarruselUno" role="listbox">
+                  <img
+                  class="carousel-item active img-fluid"
+                  src="../img/${info.imagen}"
+                  alt="Paula y Gaby"
+                />
+                <img
+                  class="img-fluid carousel-item"
+                  src="../img/${info.imagen}"
+                  alt="Paula y Gaby"
+                />
+                <img
+                  class="img-fluid carousel-item"
+                  src="../img/${info.imagen}"
+                  alt="Paula y Gaby"
+                />
+                </div>
+                
+                <a
+                  class="carousel-control-prev w-aut margenModalFlecha"
+                  href="#recipeCarousel2"
+                  role="button"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon bg-transparent"
+                    aria-hidden="true"
+                  ></span>
+                </a>
+                <a
+                  class="carousel-control-next w-aut margenModalFlecha"
+                  href="#recipeCarousel2"
+                  role="button"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon bg-transparent"
+                    aria-hidden="true"
+                  ></span>
+                </a>
+              </div>
+            
+            </div>
+            </div>
+        </div>
+    </div>
+`
+
+                    const modal = document.createElement('div');
+                    modal.innerHTML = carruselModal
                     const contenedor = document.createElement('div');
-                    contenedor.classList.add('conteiner-fluid');
+                    contenedor.classList.add('container-fluid');
                     const row = document.createElement('div');
-                    row.classList.add("row");
+                    row.classList.add("row", "maxDesk");
                     const cajaFoto = document.createElement('div')
                     cajaFoto.classList.add('col-12','col-md-6','conociendonosFoto')
+                    cajaFoto.innerHTML = carruselProducto;
+                    const divFotos = document.createElement('div')
+                    divFotos.classList.add("d-none" ,"d-md-block") 
                     const img1 = document.createElement('img');
+                    img1.setAttribute("data-bs-toggle","modal")
+                    img1.setAttribute("data-toggle","modal")
+                    img1.setAttribute("data-bs-target","#exampleModal")
                     img1.classList.add('img-fluid');
                     img1.setAttribute('src', `../img/${info.imagen}`);
                     const img2 = document.createElement('img');
+                    img2.setAttribute("data-bs-toggle","modal")
+                    img2.setAttribute("data-toggle","modal")
+                    img2.setAttribute("data-bs-target","#exampleModal")
                     img2.classList.add('img-fluid');
                     img2.setAttribute('src', `../img/${info.imagen}`);
                     const img3 = document.createElement('img');
+                    img3.setAttribute("data-bs-toggle","modal")
+                    img3.setAttribute("data-toggle","modal")
+                    img3.setAttribute("data-bs-target","#exampleModal")
                     img3.classList.add('img-fluid');
                     img3.setAttribute('src', `../img/${info.imagen}`);
                     const cajaProducto = document.createElement('div')
@@ -270,9 +398,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         })
                     });
 
-                    cajaFoto.appendChild(img1)
-                    cajaFoto.appendChild(img2)
-                    cajaFoto.appendChild(img3)
+                    divFotos.appendChild(img1)
+                    divFotos.appendChild(img2)
+                    divFotos.appendChild(img3)
+                    cajaFoto.appendChild(divFotos)
                     cajaEdad.appendChild(edadImg)
                     cajaEdad.appendChild(edad)
                     cajaProducto.appendChild(cajaEdad)
@@ -284,6 +413,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     cajaProducto.appendChild(subContiene)
                     cajaProducto.appendChild(textoContiene)
                     cajaProducto.appendChild(divProductosBoton)
+                    crearMain.appendChild(modal)
                     
                     row.appendChild(cajaFoto)
                     row.appendChild(cajaProducto)

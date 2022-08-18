@@ -7834,19 +7834,28 @@ i {
 .navbar-expand-md .navbar-collapse {
   justify-content: flex-end;
   margin-right: 12.5%; }
+  @media screen and (min-width: 768px) {
+    .navbar-expand-md .navbar-collapse {
+      margin-right: 5%; } }
+  @media screen and (min-width: 1000px) {
+    .navbar-expand-md .navbar-collapse {
+      margin-right: 12.5%; } }
 
 .bloqueLogo {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   width: calc(100% - 66px);
   justify-content: center;
   padding-left: 66px; }
   .bloqueLogo img {
-    width: 70%;
     margin: auto; }
     .bloqueLogo img:hover {
       opacity: .7; }
   @media screen and (min-width: 768px) {
+    .bloqueLogo {
+      padding-left: 5%;
+      width: auto; } }
+  @media screen and (min-width: 1000px) {
     .bloqueLogo {
       padding-left: 12.74%;
       width: auto; } }
@@ -7878,7 +7887,7 @@ i {
 .navbar-dark .navbar-toggler {
   color: transparent;
   border-color: transparent;
-  padding-right: 2rem;
+  padding-right: 1rem;
   margin-top: 0.3rem; }
 
 .navbar-collapse {
@@ -7962,21 +7971,56 @@ footer {
 
 /* INICIO  */
 #inicio {
-  background-image: url("..//img/IMG_8774 1.png");
+  background-image: url("../img/imgSweet.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
-  height: 57vh;
-  left: -6.13px;
-  top: -350.32px; }
+  height: 50vh; }
+  @media screen and (min-width: 768px) {
+    #inicio {
+      background-image: url("..//img/IMG_8774 1.png"); } }
 
 @media screen and (min-width: 768px) {
   .opaco {
     opacity: 0.5; }
     .opaco:hover {
       opacity: 1; } }
+
+.card {
+  border: none;
+  border-radius: none; }
+
+.bg-transparent {
+  --bs-bg-opacity: 0.3;
+  background-color: grey !important;
+  border-radius: 15rem; }
+
+.carousel-control-prev:hover, .carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.5; }
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: none;
+  border: 0;
+  opacity: 0.3;
+  transition: opacity 0.15s ease; }
 
 .titleSweet {
   font-family: "SF Pro";
@@ -8039,7 +8083,7 @@ input {
   padding: 0; }
 
 .carousel-item {
-  transition: transform 0.6s linear; }
+  transition: all 0.4s ease-in; }
   @media screen and (min-width: 768px) {
     .carousel-item img {
       opacity: 0.5; }
@@ -8047,49 +8091,55 @@ input {
         opacity: 1; } }
 
 #conociendonos {
-  margin-top: 4.1rem;
-  font-size: 0.8rem; }
+  margin-top: 6rem;
+  font-size: 1rem; }
   #conociendonos .conociendonos {
     height: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    padding-left: 6%;
+    padding-right: 6%; }
     @media screen and (min-width: 768px) {
       #conociendonos .conociendonos {
-        padding-left: 5%;
-        padding-right: 15%;
         position: sticky;
         top: 5rem; } }
   #conociendonos .conociendonosFoto {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; }
+    flex-direction: column;
+    padding-left: 6%;
+    padding-right: 6%; }
     #conociendonos .conociendonosFoto img {
       margin-bottom: 3rem; }
   #conociendonos .conociendonos_texto_salmon {
     color: #e9555e;
-    font-size: 0.8;
+    font-size: 1;
     font-family: "SF Pro";
     font-weight: 300; }
   #conociendonos .conociendonos_texto_salmonFuerte {
     font-weight: 900; }
   #conociendonos .conociendonos_texto_simple {
-    font-size: 0.8;
+    font-size: 1;
     font-weight: 700; }
   #conociendonos .nosotras {
-    font-size: 0.8;
+    font-size: 1;
     font-family: "SF Pro";
     font-weight: 900; }
   #conociendonos .conociendonos_texto_final {
-    font-size: 0.8;
+    font-size: 1;
     font-family: "SF Pro";
     font-weight: 300; }
 
 .row {
   --bs-gutter-x: 0; }
+
+.maxDesk {
+  max-width: 1200px;
+  margin: auto; }
 
 .whatsapp {
   position: fixed;
@@ -8112,7 +8162,7 @@ input {
 
 .textoEdad {
   font-family: "SF Pro";
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: left;
   letter-spacing: -0.33px;
   font-weight: 300;
@@ -8120,21 +8170,21 @@ input {
 
 .titulo {
   font-family: "SF Pro Text";
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: left;
   letter-spacing: -0.33px;
   font-weight: 900; }
 
 .precio {
   font-family: "SF Pro";
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: left;
   letter-spacing: -0.33px;
   font-weight: 700; }
 
 .texto {
   font-family: "SF Pro";
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: left;
   letter-spacing: -0.33px;
   font-weight: 300; }
@@ -8144,7 +8194,7 @@ input {
 
 .subtitulo {
   font-family: "SF Pro";
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   text-align: left;
   letter-spacing: -0.33px;
   font-weight: 700; }
@@ -8159,6 +8209,27 @@ input {
   .cajaEdad p {
     margin-bottom: 0;
     margin-left: .5rem; }
+
+.modal-content {
+  background-color: transparent;
+  border: none; }
+  .modal-content .bg-transparent {
+    --bs-bg-opacity: 1;
+    background-color: transparent !important;
+    border-radius: 15rem; }
+
+.carousel-inner {
+  max-height: 100%; }
+
+.margenModalFlecha {
+  margin: -2.5rem;
+  opacity: 1; }
+  @media screen and (min-width: 768px) {
+    .margenModalFlecha {
+      margin: -6rem; } }
+
+.modal-dialog {
+  max-width: 600px; }
 
 @media (max-width: 767px) {
   .carousel-inner .carousel-item > div {

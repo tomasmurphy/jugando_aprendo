@@ -19,3 +19,8 @@ $verde: #60BFB6;
     @content;
   }
 }
+@mixin gigante {
+  @media screen and (min-width: 1000px) {
+    @content;
+  }
+}

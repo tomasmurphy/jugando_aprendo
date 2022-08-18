@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const crearCarruselUno = document.querySelector('#crearCarruselUno');
         const crearCarruselDos = document.querySelector('#crearCarruselDos');
         
+        
+
         function cargarProductos(filtro) {
             
             switch (filtro) {

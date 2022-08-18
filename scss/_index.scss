@@ -1,15 +1,17 @@
 @import "_variables.scss";
 /* INICIO  */
 #inicio {
-  background-image: url("..//img/IMG_8774\ 1.png");
+  background-image: url("../img/imgSweet.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
-  height: 57vh;
-  left: -6.13px;
-  top: -350.32px;
+  height: 50vh;
+  @include desktop{
+    background-image: url("..//img/IMG_8774\ 1.png");
+
+  }
 }
 .opaco {
   @include desktop {
@@ -19,7 +21,37 @@
     }
   }
 }
-
+.card{
+  border: none;
+  border-radius: none;
+}
+.bg-transparent {
+  --bs-bg-opacity: 0.3;
+  background-color: grey !important;
+  border-radius: 15rem;
+}
+.carousel-control-prev:hover, .carousel-control-prev:focus, .carousel-control-next:hover, .carousel-control-next:focus {
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.5;
+}
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: none;
+  border: 0;
+  opacity: 0.3;
+  transition: opacity 0.15s ease;
+}
 // SWEET ALERT
 .titleSweet {
   font-family: "SF Pro";
@@ -86,7 +118,7 @@ input {
   padding: 0;
 }
 .carousel-item {
-  transition: transform 0.6s linear;
+  transition: all 0.4s ease-in;
   img {
     @include desktop {
       opacity: 0.5;
@@ -97,8 +129,8 @@ input {
   }
 }
 #conociendonos {
-  margin-top: 4.1rem;
-  font-size: 0.8rem;
+  margin-top: 6rem;
+  font-size: 1rem;
   .conociendonos {
     height: 100%;
     display: flex;
@@ -106,9 +138,9 @@ input {
     justify-content: space-between;
     flex-direction: column;
     margin-bottom: 2rem;
+    padding-left: 6%;
+    padding-right: 6%;
     @include desktop {
-      padding-left: 5%;
-      padding-right: 15%;
       position: sticky;
       top: 5rem;
     }
@@ -118,6 +150,8 @@ input {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-left: 6%;
+    padding-right: 6%;
     img {
       margin-bottom: 3rem;
     }
@@ -125,7 +159,7 @@ input {
 
   .conociendonos_texto_salmon {
     color: #e9555e;
-    font-size: 0.8;
+    font-size: 1;
     font-family: "SF Pro";
     font-weight: 300;
   }
@@ -134,24 +168,28 @@ input {
   }
 
   .conociendonos_texto_simple {
-    font-size: 0.8;
+    font-size: 1;
     font-weight: 700;
   }
 
   .nosotras {
-    font-size: 0.8;
+    font-size: 1;
     font-family: "SF Pro";
     font-weight: 900;
   }
 
   .conociendonos_texto_final {
-    font-size: 0.8;
+    font-size: 1;
     font-family: "SF Pro";
     font-weight: 300;
   }
 }
 .row {
   --bs-gutter-x: 0;
+}
+.maxDesk{
+  max-width: 1200px;
+  margin: auto;
 }
 .whatsapp {
   position: fixed;
@@ -179,7 +217,7 @@ input {
 // PRODUCTO
 .textoEdad {
   font-family: "SF Pro";
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: left;
   letter-spacing: -0.33px;
   font-weight: 300;
@@ -187,21 +225,21 @@ input {
 }
 .titulo {
   font-family: "SF Pro Text";
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: left;
   letter-spacing: -0.33px;
   font-weight: 900;
 }
 .precio {
   font-family: "SF Pro";
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: left;
   letter-spacing: -0.33px;
   font-weight: 700;
 }
 .texto {
   font-family: "SF Pro";
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: left;
   letter-spacing: -0.33px;
   font-weight: 300;
@@ -211,7 +249,7 @@ input {
 }
 .subtitulo {
   font-family: "SF Pro";
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   text-align: left;
   letter-spacing: -0.33px;
   font-weight: 700;
@@ -228,4 +266,27 @@ input {
       margin-left: .5rem;
     }
   
+}
+.modal-content{
+  background-color: transparent;
+  border: none;
+  .bg-transparent {
+    --bs-bg-opacity: 1;
+    background-color: transparent !important;
+    border-radius: 15rem;
+  }
+}
+.carousel-inner{
+  max-height: 100%;
+}
+
+.margenModalFlecha{
+  margin: -2.5rem;
+  opacity: 1;
+  @include desktop{
+    margin: -6rem;
+  }
+}
+.modal-dialog {
+  max-width: 600px;
 }
