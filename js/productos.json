@@ -1,13 +1,14 @@
 [
     {
       "id": 1,
-      "categoria": "Esculturas",
-      "nombre": "Equilibrista",
-      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "categoria": "Es importante conocerlas y saber que no existen emociones buenas ni malas. Con las fichas de EMOCIONES aprendo a identificarlas, a reconocerlas y entiendo qué es lo que siento cuando experimento alguna de ellas como la tristeza, alegría, disgusto, enojo, sorpresa, entre otras.",
+      "nombre": "EMOCIONES",
+      "descripcion": "Creando con estas 7 piezas y 20 tarjetas de instrucciones, entrenamos nuestras habilidades motrices y también las intelectuales. Fomentamos la orientación y estructuración espacial, estimulamos la creatividad, mejoramos la atención y desarrollamos el conocimiento lógico-matemático. No hay límites, ¡Desafiate a crear alguna nueva forma que no se incluya en las tarjetas! Podés compartirnos tu nueva creación en nuestra redes: @jugandoaprendook así los demás pueden probarlo también.",
       "precio": 15000,
       "imagen": "1.jpg",
       "imagenDos": "imagen",
-      "imagenTres": "imagen"
+      "imagenTres": "imagen",
+      "rojo": "Las emociones son respuestas automáticas que nos permiten adaptarnos a las distintas situaciones."
     },
     {
       "id": 2,

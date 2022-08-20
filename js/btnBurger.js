@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {        const btnBurger = d
         let items = document.querySelectorAll('.carousel .carousel-item')
 
     items.forEach((el) => {
-        const minPerSlide = 1
+        const minPerSlide = 2
         let next = el.nextElementSibling
         for (var i=1; i<minPerSlide; i++) {
             if (!next) {

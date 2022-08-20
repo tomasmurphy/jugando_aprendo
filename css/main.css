@@ -7850,7 +7850,8 @@ i {
   .bloqueLogo img {
     margin: auto; }
     .bloqueLogo img:hover {
-      opacity: .7; }
+      transform: scale(0.8);
+      opacity: 0.7; }
   @media screen and (min-width: 768px) {
     .bloqueLogo {
       padding-left: 5%;
@@ -7905,8 +7906,9 @@ i {
     text-decoration: none;
     margin: 1rem; }
     .navbar-collapse a:hover {
-      opacity: 0.7;
-      color: black; }
+      transform: scale(1.1);
+      color: black;
+      font-weight: bold; }
 
 .navbar-nav {
   display: flex;
@@ -7933,6 +7935,8 @@ i {
       align-items: center;
       flex-direction: column;
       margin-top: 0; } }
+  .redes a:hover {
+    transform: scale(1.5); }
 
 nav {
   opacity: 1;
@@ -7964,23 +7968,33 @@ footer {
   width: 100%;
   position: fixed;
   bottom: 0;
-  height: 3rem;
+  height: 2.9rem;
   background-image: url("../img/footer.svg");
   background-repeat: repeat;
   background-size: cover; }
 
 /* INICIO  */
 #inicio {
-  background-image: url("../img/imgSweet.png");
-  background-position: center;
+  background-image: url("../img/97.JPG");
+  background-position: center 2rem;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   width: 100%;
-  height: 50vh; }
+  height: 50vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
   @media screen and (min-width: 768px) {
     #inicio {
-      background-image: url("..//img/IMG_8774 1.png"); } }
+      background-image: url("../img/97.JPG");
+      height: 60vh;
+      background-position: center -2rem; } }
+  #inicio a {
+    font-size: 5rem;
+    margin-bottom: 5rem; }
+    #inicio a i {
+      color: whitesmoke; }
 
 @media screen and (min-width: 768px) {
   .opaco {
@@ -7993,8 +8007,8 @@ footer {
   border-radius: none; }
 
 .bg-transparent {
-  --bs-bg-opacity: 0.3;
-  background-color: grey !important;
+  --bs-bg-opacity: 1;
+  background-color: black !important;
   border-radius: 15rem; }
 
 .carousel-control-prev:hover, .carousel-control-prev:focus,
@@ -8002,7 +8016,7 @@ footer {
 .carousel-control-next:focus {
   text-decoration: none;
   outline: 0;
-  opacity: 0.5; }
+  opacity: .7; }
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -8019,7 +8033,7 @@ footer {
   text-align: center;
   background: none;
   border: 0;
-  opacity: 0.3;
+  opacity: 0.5;
   transition: opacity 0.15s ease; }
 
 .titleSweet {
@@ -8073,7 +8087,7 @@ input {
   border-radius: 0.5rem; }
   .btnComprarEstilo:hover {
     color: white;
-    opacity: 0.7; }
+    transform: scale(1.1); }
 
 .borde {
   border-radius: 0.5rem;
@@ -8099,7 +8113,6 @@ input {
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
-    margin-bottom: 2rem;
     padding-left: 6%;
     padding-right: 6%; }
     @media screen and (min-width: 768px) {
@@ -8246,11 +8259,45 @@ input {
 @media (min-width: 768px) {
   .carousel-inner .carousel-item-end.active,
   .carousel-inner .carousel-item-next {
-    transform: translateX(25%); }
+    transform: translateX(100%); }
   .carousel-inner .carousel-item-start.active,
   .carousel-inner .carousel-item-prev {
-    transform: translateX(-25%); } }
+    transform: translateX(-100%); }
+  .carousel-inner .carousel-item-end,
+  .carousel-inner .carousel-item-start {
+    transform: translateX(0%); } }
 
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start {
-  transform: translateX(0); }
+#recipeCarouselIndexUno .carousel-inner .carousel-item > div, #recipeCarouselIndexDos .carousel-inner .carousel-item > div {
+  display: flex; }
+
+#recipeCarouselIndexUno .carousel-inner .carousel-item > div:first-child, #recipeCarouselIndexDos .carousel-inner .carousel-item > div:first-child {
+  display: flex; }
+
+#recipeCarouselIndexUno .carousel-inner .carousel-item-end.active,
+#recipeCarouselIndexUno .carousel-inner .carousel-item-next, #recipeCarouselIndexDos .carousel-inner .carousel-item-end.active,
+#recipeCarouselIndexDos .carousel-inner .carousel-item-next {
+  transform: translateX(50%); }
+
+#recipeCarouselIndexUno .carousel-inner .carousel-item-start.active,
+#recipeCarouselIndexUno .carousel-inner .carousel-item-prev, #recipeCarouselIndexDos .carousel-inner .carousel-item-start.active,
+#recipeCarouselIndexDos .carousel-inner .carousel-item-prev {
+  transform: translateX(-50%); }
+
+#recipeCarouselIndexUno .carousel-inner .carousel-item-end,
+#recipeCarouselIndexUno .carousel-inner .carousel-item-start, #recipeCarouselIndexDos .carousel-inner .carousel-item-end,
+#recipeCarouselIndexDos .carousel-inner .carousel-item-start {
+  transform: translateX(0%); }
+
+@media (min-width: 768px) {
+  #recipeCarouselIndexUno .carousel-inner .carousel-item-end.active,
+  #recipeCarouselIndexUno .carousel-inner .carousel-item-next, #recipeCarouselIndexDos .carousel-inner .carousel-item-end.active,
+  #recipeCarouselIndexDos .carousel-inner .carousel-item-next {
+    transform: translateX(25%); }
+  #recipeCarouselIndexUno .carousel-inner .carousel-item-start.active,
+  #recipeCarouselIndexUno .carousel-inner .carousel-item-prev, #recipeCarouselIndexDos .carousel-inner .carousel-item-start.active,
+  #recipeCarouselIndexDos .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%); }
+  #recipeCarouselIndexUno .carousel-inner .carousel-item-end,
+  #recipeCarouselIndexUno .carousel-inner .carousel-item-start, #recipeCarouselIndexDos .carousel-inner .carousel-item-end,
+  #recipeCarouselIndexDos .carousel-inner .carousel-item-start {
+    transform: translateX(0%); } }

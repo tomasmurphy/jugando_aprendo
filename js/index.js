@@ -79,7 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 let items = document.querySelectorAll('.carousel .carousel-item')
 
     items.forEach((el) => {
-    const minPerSlide = 4
+    const cantFotos = screen.width < 768 ? 2 : 4;
+    const minPerSlide = cantFotos 
     let next = el.nextElementSibling
     for (var i=1; i<minPerSlide; i++) {
         if (!next) {

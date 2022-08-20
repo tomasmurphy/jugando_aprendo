@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // POR CATEGORIA 
                 productosFiltrados.forEach((info) => {
                     const divProductos = document.createElement('div');
-                    divProductos.classList.add('card', 'mx-0', 'px-0', 'col-12', 'col-sm-6', 'col-md-3');
+                    divProductos.classList.add('card', 'mx-0', 'px-0', 'col-6', 'col-md-3');
                     const divProductosCardBody = document.createElement('div');
                     divProductosCardBody.classList.add('card-body', 'mx-0', 'px-0',);
                     const divProductosImagen = document.createElement('img');
@@ -275,7 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     cajaEdad.classList.add('cajaEdad')
                     const edad = document.createElement('p');
                     edad.classList.add('textoEdad');
-                    edad.textContent = `3 a 8 años`;
+                    edad.textContent = `A partir de los 4 años`;
                     const edadImg = document.createElement('img');
                     edadImg.setAttribute('src', `../img/edad.png`);
                     const titulo = document.createElement('p');
@@ -286,16 +286,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     precio.textContent = `$${info.precio} ARS`;
                     const textoRojo = document.createElement('p');
                     textoRojo.classList.add('texto','rojo');
-                    textoRojo.textContent = `${info.descripcion}`;
+                    textoRojo.textContent = `${info.rojo}`;
                     const subInstrucciones = document.createElement('p');
                     subInstrucciones.classList.add('subtitulo');
-                    subInstrucciones.textContent = `Instrucciones`;
+                    subInstrucciones.textContent = ``;
                     const subContiene = document.createElement('p');
                     subContiene.classList.add('subtitulo');
-                    subContiene.textContent = `Contiene`;
+                    subContiene.textContent = `¿Como jugamos?`;
                     const texto = document.createElement('p');
                     texto.classList.add('texto');
-                    texto.textContent = `${info.descripcion}`;
+                    texto.textContent = `${info.categoria}`;
                     const textoContiene = document.createElement('p');
                     textoContiene.classList.add('texto');
                     textoContiene.textContent = `${info.descripcion}`;
