@@ -35,7 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     divCardImg.classList.add('card-img');
                     const img = document.createElement('img');
                     img.classList.add('img-fluid');
-                    img.setAttribute('src', `./img/${info.imagen}`);
+                    img.setAttribute('src', `./img/productos/${info.imagenUno}`);
+                    img.setAttribute('alt', `${info.altUno}`);
                     const aLink = document.createElement('a');
                     aLink.setAttribute('href', `./secciones/jugando.html#${info.id}`)
                     
@@ -64,7 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     divCardImg.classList.add('card-img');
                     const img = document.createElement('img');
                     img.classList.add('img-fluid');
-                    img.setAttribute('src', `./img/${info.imagen}`);
+                    img.setAttribute('src', `./img/productos/${info.imagenUno}`);
+                    img.setAttribute('alt', `${info.altUno}`);
                     const aLink = document.createElement('a');
                     aLink.setAttribute('href', `./secciones/jugando.html#${info.id}`)
                     

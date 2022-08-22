@@ -13,44 +13,36 @@ document.addEventListener('DOMContentLoaded', () => {
     const importarProductos = async () => {
         const respuesta = await fetch(productosJson)
         const productos = await respuesta.json()
-        const btnTodos = document.querySelector("#btnTodos");
-        const btnEsculturas = document.querySelector("#btnEsculturas");
-        const btnPinturas = document.querySelector("#btnPinturas");
-        const btnFotos = document.querySelector("#btnFotos");
         let carrito = "";
         const crearItems = document.querySelector('#crearItems');
         const btnButton = document.querySelector("#button");
         let strProducto = "";
-       
+        const btnCero = document.querySelector("#btnCero");
+        const btnCuatro = document.querySelector("#btnCuatro");
+        const btnCinco = document.querySelector("#btnCinco");
+  // BOTONES 
+btnCero.addEventListener("click", () => {
+  location.replace(`${window.location.pathname}#+0`)
+  traerId();
+});
+btnCuatro.addEventListener("click", () => {
+  location.replace(`${window.location.pathname}#+4`)
+  traerId();
+});
+  btnCinco.addEventListener("click", () => {
+  location.replace(`${window.location.pathname}#+5`)
+  traerId();
+});
+
   
 
-        // // EVENTOS BOTONES 
-        btnTodos.addEventListener("click", () => {
-            location.replace(`${window.location.pathname}`)
-
-            traerId();
-
-        });
-        btnEsculturas.addEventListener("click", () => {
-            location.replace(`${window.location.pathname}#Esculturas`)
-
-            traerId();
-
-        });
-        btnPinturas.addEventListener("click", () => {
-            location.replace(`${window.location.pathname}#Pinturas`)
-            traerId();
-        });
-        btnFotos.addEventListener("click", () => {
-            location.replace(`${window.location.pathname}#Fotos`)
-            traerId();
-        });
 
         // CREAR MAIN DONDE CARGAR PRODUCTOS 
         const crearMain = document.createElement('main');
         crearMain.setAttribute("id", "items")
         crearMain.classList.add("items", "col-12", "row", "mx-0");
         crearItems.appendChild(crearMain);
+
 
         // FUNCIONES 
         function traerId() {
@@ -72,35 +64,19 @@ document.addEventListener('DOMContentLoaded', () => {
             switch (filtro) {
                 case undefined:
                     var productosFiltrados = productos;
-                    btnEsculturas.classList.remove("activo");
-                    btnPinturas.classList.add("activo");
-                    btnFotos.classList.add("activo");
                     break;
 
-                case "Esculturas":
-                    var productosFiltrados = productos.filter(a => a.categoria === filtro);
-                    btnEsculturas.classList.remove("activo");
-                    btnPinturas.classList.add("activo");
-                    btnFotos.classList.add("activo");
+                case "+0":
+                    var productosFiltrados = productos.filter(a => a.aPartirDe >= 0);
                     break;
-                case "Pinturas":
-                    var productosFiltrados = productos.filter(a => a.categoria === filtro);
-                    btnPinturas.classList.remove("activo");
-                    btnEsculturas.classList.add("activo");
-                    btnFotos.classList.add("activo");
+                case "+4":
+                    var productosFiltrados = productos.filter(a => (a.aPartirDe >= 4) && (a.aPartirDe < 5) );
                     break;
-                case "Fotos":
-                    var productosFiltrados = productos.filter(a => a.categoria === filtro);
-                    btnFotos.classList.remove("activo");
-                    btnPinturas.classList.add("activo");
-                    btnEsculturas.classList.add("activo");
+                case "+5":
+                    var productosFiltrados = productos.filter(a => a.aPartirDe >= 5);
                     break;
                 default:
                     var productosFiltrados = productos.filter(a => a.id == filtro);
-                    btnFotos.classList.add("activo");
-                    btnEsculturas.classList.add("activo");
-                    btnPinturas.classList.add("activo");
-
                     break;
             }
 
@@ -113,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     divProductosCardBody.classList.add('card-body', 'mx-0', 'px-0',);
                     const divProductosImagen = document.createElement('img');
                     divProductosImagen.classList.add('img-fluid', 'mx-0', 'px-0', 'opaco');
-                    divProductosImagen.setAttribute('src', `../img/${info.imagen}`);
+                    divProductosImagen.setAttribute('src', `../img/productos/${info.imagenUno}`);
                     const divProductosLink = document.createElement('a');
                     divProductosLink.addEventListener("click", () => {
                         location.replace(`${window.location.pathname}#${info.id}`)
@@ -137,20 +113,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="carousel-inner" id="crearCarruselUno" role="listbox">
                       <img
                       class="carousel-item active img-fluid"
-                      src="../img/${info.imagen}"
-                      alt="Paula y Gaby"
+                      src="../img/productos/${info.imagenUno}"
+                      alt="${info.altUno}"
                       data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal"
                     />
                     <img
                       class="img-fluid carousel-item"
-                      src="../img/${info.imagen}"
-                      alt="Paula y Gaby"
+                      src="../img/productos/${info.imagenDos}"
+                      alt="${info.altDos}"
                       data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal"
                       />
                     <img
                       class="img-fluid carousel-item"
-                      src="../img/${info.imagen}"
-                      alt="Paula y Gaby"
+                      src="../img/productos/${info.imagenTres}"
+                      alt="${info.altTres}"
                       data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal"
                     />
                     </div>
@@ -195,18 +171,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="carousel-inner" id="crearCarruselUno" role="listbox">
                   <img
                   class="carousel-item active img-fluid"
-                  src="../img/${info.imagen}"
-                  alt="Paula y Gaby"
+                  src="../img/productos/${info.imagenUno}"
+                  alt="${info.altUno}"
                 />
                 <img
                   class="img-fluid carousel-item"
-                  src="../img/${info.imagen}"
-                  alt="Paula y Gaby"
-                />
+                  src="../img/productos/${info.imagenDos}"
+                  alt="${info.altDos}"/>
                 <img
                   class="img-fluid carousel-item"
-                  src="../img/${info.imagen}"
-                  alt="Paula y Gaby"
+                  src="../img/productos/${info.imagenTres}"
+                  alt="${info.altTres}"
                 />
                 </div>
                 
@@ -256,26 +231,29 @@ document.addEventListener('DOMContentLoaded', () => {
                     img1.setAttribute("data-toggle","modal")
                     img1.setAttribute("data-bs-target","#exampleModal")
                     img1.classList.add('img-fluid');
-                    img1.setAttribute('src', `../img/${info.imagen}`);
+                    img1.setAttribute('src', `../img/productos/${info.imagenUno}`);
+                    img1.setAttribute('alt', `../img/productos/${info.altUno}`);
                     const img2 = document.createElement('img');
                     img2.setAttribute("data-bs-toggle","modal")
                     img2.setAttribute("data-toggle","modal")
                     img2.setAttribute("data-bs-target","#exampleModal")
                     img2.classList.add('img-fluid');
-                    img2.setAttribute('src', `../img/${info.imagen}`);
+                    img2.setAttribute('src', `../img/productos/${info.imagenDos}`);
+                    img2.setAttribute('alt', `../img/productos/${info.altDos}`);
                     const img3 = document.createElement('img');
                     img3.setAttribute("data-bs-toggle","modal")
                     img3.setAttribute("data-toggle","modal")
                     img3.setAttribute("data-bs-target","#exampleModal")
                     img3.classList.add('img-fluid');
-                    img3.setAttribute('src', `../img/${info.imagen}`);
+                    img3.setAttribute('src', `../img/productos/${info.imagenTres}`);
+                    img3.setAttribute('alt', `../img/productos/${info.altTres}`);
                     const cajaProducto = document.createElement('div')
                     cajaProducto.classList.add('col-12','col-md-6','conociendonos')
                     const cajaEdad = document.createElement('div')
                     cajaEdad.classList.add('cajaEdad')
                     const edad = document.createElement('p');
                     edad.classList.add('textoEdad');
-                    edad.textContent = `A partir de los 4 años`;
+                    edad.textContent = `A partir de los ${info.aPartirDe} años`;
                     const edadImg = document.createElement('img');
                     edadImg.setAttribute('src', `../img/edad.png`);
                     const titulo = document.createElement('p');
@@ -286,7 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     precio.textContent = `$${info.precio} ARS`;
                     const textoRojo = document.createElement('p');
                     textoRojo.classList.add('texto','rojo');
-                    textoRojo.textContent = `${info.rojo}`;
+                    textoRojo.textContent = `${info.textoUno}`;
                     const subInstrucciones = document.createElement('p');
                     subInstrucciones.classList.add('subtitulo');
                     subInstrucciones.textContent = ``;
@@ -295,14 +273,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     subContiene.textContent = `¿Como jugamos?`;
                     const texto = document.createElement('p');
                     texto.classList.add('texto');
-                    texto.textContent = `${info.categoria}`;
+                    texto.textContent = `${info.textoDos}`;
                     const textoContiene = document.createElement('p');
                     textoContiene.classList.add('texto');
-                    textoContiene.textContent = `${info.descripcion}`;
+                    textoContiene.textContent = `${info.textoTres}`;
 
 
                     const divProductosBoton = document.createElement('button');
-                    divProductosBoton.classList.add('btn', 'mb-5', 'btnComprarEstilo');
+                    divProductosBoton.classList.add('btn', 'btnComprarEstilo');
                     divProductosBoton.textContent = 'Comprar';
                     divProductosBoton.setAttribute('marcador', info.id);
                     divProductosBoton.addEventListener("click", () => {
@@ -397,7 +375,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         })
                     });
-
+                    const btnSeguir = document.createElement('button');
+                    btnSeguir.classList.add('btn', 'btnSeguirEstilo');
+                    btnSeguir.textContent = 'Seguir mirando';
+                    btnSeguir.addEventListener("click", () => {
+                        location.replace(`${window.location.pathname}`)
+                            ;
+                    });
+                    const botonera = document.createElement('div');
+                    botonera.classList.add("botonera");
+                    
+                    botonera.appendChild(divProductosBoton)
+                    botonera.appendChild(btnSeguir)
                     divFotos.appendChild(img1)
                     divFotos.appendChild(img2)
                     divFotos.appendChild(img3)
@@ -412,7 +401,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     cajaProducto.appendChild(texto)
                     cajaProducto.appendChild(subContiene)
                     cajaProducto.appendChild(textoContiene)
-                    cajaProducto.appendChild(divProductosBoton)
+                    cajaProducto.appendChild(botonera)
                     crearMain.appendChild(modal)
                     
                     row.appendChild(cajaFoto)

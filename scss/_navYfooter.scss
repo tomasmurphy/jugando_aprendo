@@ -64,6 +64,22 @@
   padding-right: 1rem;
   margin-top: 0.3rem;
 }
+.dropdown{
+  a {
+    font-family: "SF Pro";
+    font-style: normal;
+    font-weight: 510;
+    font-size: .8rem;
+    line-height: 17px;
+    text-decoration: none;
+    margin: 1rem;
+    &:hover {
+      transform: scale(1.1);
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
 .navbar-collapse {
   flex-basis: 100%;
   flex-grow: 1;

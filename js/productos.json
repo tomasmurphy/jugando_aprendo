@@ -1,105 +1,20 @@
 [
-    {
-      "id": 1,
-      "categoria": "Es importante conocerlas y saber que no existen emociones buenas ni malas. Con las fichas de EMOCIONES aprendo a identificarlas, a reconocerlas y entiendo qué es lo que siento cuando experimento alguna de ellas como la tristeza, alegría, disgusto, enojo, sorpresa, entre otras.",
-      "nombre": "EMOCIONES",
-      "descripcion": "Creando con estas 7 piezas y 20 tarjetas de instrucciones, entrenamos nuestras habilidades motrices y también las intelectuales. Fomentamos la orientación y estructuración espacial, estimulamos la creatividad, mejoramos la atención y desarrollamos el conocimiento lógico-matemático. No hay límites, ¡Desafiate a crear alguna nueva forma que no se incluya en las tarjetas! Podés compartirnos tu nueva creación en nuestra redes: @jugandoaprendook así los demás pueden probarlo también.",
-      "precio": 15000,
-      "imagen": "1.jpg",
-      "imagenDos": "imagen",
-      "imagenTres": "imagen",
-      "rojo": "Las emociones son respuestas automáticas que nos permiten adaptarnos a las distintas situaciones."
-    },
-    {
-      "id": 2,
-      "categoria": "Esculturas",
-      "nombre": "Mountro",
-      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
-      "precio": 28000,
-      "imagen": "1.1.jpg"
-    },
-    {
-      "id": 3,
-      "categoria": "Esculturas",
-      "nombre": "Estrellas",
-      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
-      "precio": 10000,
-      "imagen": "1.2.jpg"
-    },
-    {
-      "id": 4,
-      "categoria": "Esculturas",
-      "nombre": "Circulo",
-      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
-      "precio": 8000,
-      "imagen": "2.jpg"
-    },
-    {
-      "id": 5,
-      "categoria": "Fotos",
-      "nombre": "Equilibrista",
-      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
-      "precio": 15000,
-      "imagen": "2.1.jpg",
-      "imagenDos": "imagen",
-      "imagenTres": "imagen"
-    },
-    {
-      "id": 6,
-      "categoria": "Fotos",
-      "nombre": "Mountro",
-      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
-      "precio": 28000,
-      "imagen": "2.2.jpg"
-    },
-    {
-      "id": 7,
-      "categoria": "Fotos",
-      "nombre": "Estrellas",
-      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
-      "precio": 10000,
-      "imagen": "1.2.jpg"
-    },
-    {
-      "id": 8,
-      "categoria": "Fotos",
-      "nombre": "Circulo",
-      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
-      "precio": 8000,
-      "imagen": "2.jpg"
-    },
-    {
-      "id": 9,
-      "categoria": "Pinturas",
-      "nombre": "Equilibrista",
-      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
-      "precio": 15000,
-      "imagen": "1.jpg",
-      "imagenDos": "imagen",
-      "imagenTres": "imagen"
-    },
-    {
-      "id": 10,
-      "categoria": "Pinturas",
-      "nombre": "Mountro",
-      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
-      "precio": 28000,
-      "imagen": "1.1.jpg"
-    },
-    {
-      "id": 11,
-      "categoria": "Pinturas",
-      "nombre": "Estrellas",
-      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
-      "precio": 10000,
-      "imagen": "2.2.jpg"
-    },
-    {
-      "id": 12,
-      "categoria": "Pinturas",
-      "nombre": "Circulo",
-      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
-      "precio": 8000,
-      "imagen": "2.1.jpg"
-    }
-    ]
+  {"id": 1,"nombre": "EMOCIONES","textoUno": "Las emociones son respuestas automáticas que nos permiten adaptarnos a las distintas situaciones.","textoDos": "Es importante conocerlas y saber que no existen emociones buenas ni malas. Con las fichas de EMOCIONES aprendo a identificarlas, a reconocerlas y entiendo qué es lo que siento cuando experimento alguna de ellas como la tristeza, alegría, disgusto, enojo, sorpresa, entre otras.","textoTres": "Con las fichas boca abajo, levantó una que refleje una emoción (6 fichas disponibles) y otra que refleje un lugar o una persona (8 fichas disponibles). Luego charlamos y damos un ejemplo que incluya ambas. Podemos hablar de alguna situación que haya sucedido o simplemente imaginar, ¡No hay respuestas correctas o incorrectas!","aPartirDe": 4,"precio": 1000,"imagenUno": "emociones_1.jpg","altUno": "","imagenDos": "emociones_2.jpg","altDos": "","imagenTres": "emociones_3.jpg","altTres": ""},
+  {"id": 2,"nombre": "TANGRAM","textoUno": "Un rompecabezas como este nos invita a dejar volar la imaginación y construir diferentes formas:","textoDos": "¿Una jirafa? ¡Por supuesto! ¿Una pirámide? ¡Por qué no! ¿Una gallina? ¡Intentémoslo!","textoTres": "Creando con estas 7 piezas y 20 tarjetas de instrucciones, entrenamos nuestras habilidades motrices y también las intelectuales. Fomentamos la orientación y estructuración espacial, estimulamos la creatividad, mejoramos la atención y desarrollamos el conocimiento lógico-matemático. No hay límites, ¡Desafiate a crear alguna nueva forma que no se incluya en las tarjetas! Podés compartirnos tu nueva creación en nuestra redes: @jugandoaprendook así los demás pueden probarlo también.","aPartirDe": 5,"precio": 1000,"imagenUno": "tangram_1.jpg","altUno": "","imagenDos": "tangram_2.jpg","altDos": "","imagenTres": "tangram_3.jpg","altTres": ""},
+  {"id": 3,"nombre": "MIS LETRITAS","textoUno": "Las emociones son respuestas automáticas que nos permiten adaptarnos a las distintas situaciones.","textoDos": "Es importante conocerlas y saber que no existen emociones buenas ni malas. Con las fichas de EMOCIONES aprendo a identificarlas, a reconocerlas y entiendo qué es lo que siento cuando experimento alguna de ellas como la tristeza, alegría, disgusto, enojo, sorpresa, entre otras.","textoTres": "Con las fichas boca abajo, levantó una que refleje una emoción (6 fichas disponibles) y otra que refleje un lugar o una persona (8 fichas disponibles). Luego charlamos y damos un ejemplo que incluya ambas. Podemos hablar de alguna situación que haya sucedido o simplemente imaginar, ¡No hay respuestas correctas o incorrectas!","aPartirDe": 4,"precio": 1000,"imagenUno": "emociones_1.jpg","altUno": "","imagenDos": "emociones_2.jpg","altDos": "","imagenTres": "emociones_3.jpg","altTres": ""},
+  {"id": 4,"nombre": "ABC","textoUno": "Un rompecabezas como este nos invita a dejar volar la imaginación y construir diferentes formas:","textoDos": "¿Una jirafa? ¡Por supuesto! ¿Una pirámide? ¡Por qué no! ¿Una gallina? ¡Intentémoslo!","textoTres": "Creando con estas 7 piezas y 20 tarjetas de instrucciones, entrenamos nuestras habilidades motrices y también las intelectuales. Fomentamos la orientación y estructuración espacial, estimulamos la creatividad, mejoramos la atención y desarrollamos el conocimiento lógico-matemático. No hay límites, ¡Desafiate a crear alguna nueva forma que no se incluya en las tarjetas! Podés compartirnos tu nueva creación en nuestra redes: @jugandoaprendook así los demás pueden probarlo también.","aPartirDe": 5,"precio": 1000,"imagenUno": "tangram_1.jpg","altUno": "","imagenDos": "tangram_2.jpg","altDos": "","imagenTres": "tangram_3.jpg","altTres": ""},
+  {"id": 5,"nombre": "CONOCIÉNDONOS","textoUno": "Las emociones son respuestas automáticas que nos permiten adaptarnos a las distintas situaciones.","textoDos": "Es importante conocerlas y saber que no existen emociones buenas ni malas. Con las fichas de EMOCIONES aprendo a identificarlas, a reconocerlas y entiendo qué es lo que siento cuando experimento alguna de ellas como la tristeza, alegría, disgusto, enojo, sorpresa, entre otras.","textoTres": "Con las fichas boca abajo, levantó una que refleje una emoción (6 fichas disponibles) y otra que refleje un lugar o una persona (8 fichas disponibles). Luego charlamos y damos un ejemplo que incluya ambas. Podemos hablar de alguna situación que haya sucedido o simplemente imaginar, ¡No hay respuestas correctas o incorrectas!","aPartirDe": 4,"precio": 1000,"imagenUno": "emociones_1.jpg","altUno": "","imagenDos": "emociones_2.jpg","altDos": "","imagenTres": "emociones_3.jpg","altTres": ""},
+  {"id": 6,"nombre": "EL QUE BUSCA ENCUENTRA","textoUno": "Un rompecabezas como este nos invita a dejar volar la imaginación y construir diferentes formas:","textoDos": "¿Una jirafa? ¡Por supuesto! ¿Una pirámide? ¡Por qué no! ¿Una gallina? ¡Intentémoslo!","textoTres": "Creando con estas 7 piezas y 20 tarjetas de instrucciones, entrenamos nuestras habilidades motrices y también las intelectuales. Fomentamos la orientación y estructuración espacial, estimulamos la creatividad, mejoramos la atención y desarrollamos el conocimiento lógico-matemático. No hay límites, ¡Desafiate a crear alguna nueva forma que no se incluya en las tarjetas! Podés compartirnos tu nueva creación en nuestra redes: @jugandoaprendook así los demás pueden probarlo también.","aPartirDe": 5,"precio": 1000,"imagenUno": "tangram_1.jpg","altUno": "","imagenDos": "tangram_2.jpg","altDos": "","imagenTres": "tangram_3.jpg","altTres": ""},
+  {"id": 7,"nombre": "QUIÉN LO VE PRIMERO","textoUno": "Las emociones son respuestas automáticas que nos permiten adaptarnos a las distintas situaciones.","textoDos": "Es importante conocerlas y saber que no existen emociones buenas ni malas. Con las fichas de EMOCIONES aprendo a identificarlas, a reconocerlas y entiendo qué es lo que siento cuando experimento alguna de ellas como la tristeza, alegría, disgusto, enojo, sorpresa, entre otras.","textoTres": "Con las fichas boca abajo, levantó una que refleje una emoción (6 fichas disponibles) y otra que refleje un lugar o una persona (8 fichas disponibles). Luego charlamos y damos un ejemplo que incluya ambas. Podemos hablar de alguna situación que haya sucedido o simplemente imaginar, ¡No hay respuestas correctas o incorrectas!","aPartirDe": 4,"precio": 1000,"imagenUno": "emociones_1.jpg","altUno": "","imagenDos": "emociones_2.jpg","altDos": "","imagenTres": "emociones_3.jpg","altTres": ""},
+  {"id": 8,"nombre": "CÍRCULO GOETHE","textoUno": "Un rompecabezas como este nos invita a dejar volar la imaginación y construir diferentes formas:","textoDos": "¿Una jirafa? ¡Por supuesto! ¿Una pirámide? ¡Por qué no! ¿Una gallina? ¡Intentémoslo!","textoTres": "Creando con estas 7 piezas y 20 tarjetas de instrucciones, entrenamos nuestras habilidades motrices y también las intelectuales. Fomentamos la orientación y estructuración espacial, estimulamos la creatividad, mejoramos la atención y desarrollamos el conocimiento lógico-matemático. No hay límites, ¡Desafiate a crear alguna nueva forma que no se incluya en las tarjetas! Podés compartirnos tu nueva creación en nuestra redes: @jugandoaprendook así los demás pueden probarlo también.","aPartirDe": 5,"precio": 1000,"imagenUno": "tangram_1.jpg","altUno": "","imagenDos": "tangram_2.jpg","altDos": "","imagenTres": "tangram_3.jpg","altTres": ""},
+  {"id": 9,"nombre": "ENHEBRADO","textoUno": "Las emociones son respuestas automáticas que nos permiten adaptarnos a las distintas situaciones.","textoDos": "Es importante conocerlas y saber que no existen emociones buenas ni malas. Con las fichas de EMOCIONES aprendo a identificarlas, a reconocerlas y entiendo qué es lo que siento cuando experimento alguna de ellas como la tristeza, alegría, disgusto, enojo, sorpresa, entre otras.","textoTres": "Con las fichas boca abajo, levantó una que refleje una emoción (6 fichas disponibles) y otra que refleje un lugar o una persona (8 fichas disponibles). Luego charlamos y damos un ejemplo que incluya ambas. Podemos hablar de alguna situación que haya sucedido o simplemente imaginar, ¡No hay respuestas correctas o incorrectas!","aPartirDe": 4,"precio": 1000,"imagenUno": "emociones_1.jpg","altUno": "","imagenDos": "emociones_2.jpg","altDos": "","imagenTres": "emociones_3.jpg","altTres": ""},
+  {"id": 10,"nombre": "EQUILIBRISTA","textoUno": "Un rompecabezas como este nos invita a dejar volar la imaginación y construir diferentes formas:","textoDos": "¿Una jirafa? ¡Por supuesto! ¿Una pirámide? ¡Por qué no! ¿Una gallina? ¡Intentémoslo!","textoTres": "Creando con estas 7 piezas y 20 tarjetas de instrucciones, entrenamos nuestras habilidades motrices y también las intelectuales. Fomentamos la orientación y estructuración espacial, estimulamos la creatividad, mejoramos la atención y desarrollamos el conocimiento lógico-matemático. No hay límites, ¡Desafiate a crear alguna nueva forma que no se incluya en las tarjetas! Podés compartirnos tu nueva creación en nuestra redes: @jugandoaprendook así los demás pueden probarlo también.","aPartirDe": 5,"precio": 1000,"imagenUno": "tangram_1.jpg","altUno": "","imagenDos": "tangram_2.jpg","altDos": "","imagenTres": "tangram_3.jpg","altTres": ""},
+  {"id": 11,"nombre": "MI FAMILIA","textoUno": "Las emociones son respuestas automáticas que nos permiten adaptarnos a las distintas situaciones.","textoDos": "Es importante conocerlas y saber que no existen emociones buenas ni malas. Con las fichas de EMOCIONES aprendo a identificarlas, a reconocerlas y entiendo qué es lo que siento cuando experimento alguna de ellas como la tristeza, alegría, disgusto, enojo, sorpresa, entre otras.","textoTres": "Con las fichas boca abajo, levantó una que refleje una emoción (6 fichas disponibles) y otra que refleje un lugar o una persona (8 fichas disponibles). Luego charlamos y damos un ejemplo que incluya ambas. Podemos hablar de alguna situación que haya sucedido o simplemente imaginar, ¡No hay respuestas correctas o incorrectas!","aPartirDe": 4,"precio": 1000,"imagenUno": "emociones_1.jpg","altUno": "","imagenDos": "emociones_2.jpg","altDos": "","imagenTres": "emociones_3.jpg","altTres": ""},
+  {"id": 12,"nombre": "GEOMETRÍA DIDÁCTICA","textoUno": "Un rompecabezas como este nos invita a dejar volar la imaginación y construir diferentes formas:","textoDos": "¿Una jirafa? ¡Por supuesto! ¿Una pirámide? ¡Por qué no! ¿Una gallina? ¡Intentémoslo!","textoTres": "Creando con estas 7 piezas y 20 tarjetas de instrucciones, entrenamos nuestras habilidades motrices y también las intelectuales. Fomentamos la orientación y estructuración espacial, estimulamos la creatividad, mejoramos la atención y desarrollamos el conocimiento lógico-matemático. No hay límites, ¡Desafiate a crear alguna nueva forma que no se incluya en las tarjetas! Podés compartirnos tu nueva creación en nuestra redes: @jugandoaprendook así los demás pueden probarlo también.","aPartirDe": 5,"precio": 1000,"imagenUno": "tangram_1.jpg","altUno": "","imagenDos": "tangram_2.jpg","altDos": "","imagenTres": "tangram_3.jpg","altTres": ""},
+  {"id": 13,"nombre": "MEMOTEST","textoUno": "Las emociones son respuestas automáticas que nos permiten adaptarnos a las distintas situaciones.","textoDos": "Es importante conocerlas y saber que no existen emociones buenas ni malas. Con las fichas de EMOCIONES aprendo a identificarlas, a reconocerlas y entiendo qué es lo que siento cuando experimento alguna de ellas como la tristeza, alegría, disgusto, enojo, sorpresa, entre otras.","textoTres": "Con las fichas boca abajo, levantó una que refleje una emoción (6 fichas disponibles) y otra que refleje un lugar o una persona (8 fichas disponibles). Luego charlamos y damos un ejemplo que incluya ambas. Podemos hablar de alguna situación que haya sucedido o simplemente imaginar, ¡No hay respuestas correctas o incorrectas!","aPartirDe": 4,"precio": 1000,"imagenUno": "emociones_1.jpg","altUno": "","imagenDos": "emociones_2.jpg","altDos": "","imagenTres": "emociones_3.jpg","altTres": ""},
+  {"id": 14,"nombre": "MIS BLOQUES","textoUno": "Un rompecabezas como este nos invita a dejar volar la imaginación y construir diferentes formas:","textoDos": "¿Una jirafa? ¡Por supuesto! ¿Una pirámide? ¡Por qué no! ¿Una gallina? ¡Intentémoslo!","textoTres": "Creando con estas 7 piezas y 20 tarjetas de instrucciones, entrenamos nuestras habilidades motrices y también las intelectuales. Fomentamos la orientación y estructuración espacial, estimulamos la creatividad, mejoramos la atención y desarrollamos el conocimiento lógico-matemático. No hay límites, ¡Desafiate a crear alguna nueva forma que no se incluya en las tarjetas! Podés compartirnos tu nueva creación en nuestra redes: @jugandoaprendook así los demás pueden probarlo también.","aPartirDe": 5,"precio": 1000,"imagenUno": "tangram_1.jpg","altUno": "","imagenDos": "tangram_2.jpg","altDos": "","imagenTres": "tangram_3.jpg","altTres": ""},
+  {"id": 15,"nombre": "MONSTRUOS DE COLORES","textoUno": "Las emociones son respuestas automáticas que nos permiten adaptarnos a las distintas situaciones.","textoDos": "Es importante conocerlas y saber que no existen emociones buenas ni malas. Con las fichas de EMOCIONES aprendo a identificarlas, a reconocerlas y entiendo qué es lo que siento cuando experimento alguna de ellas como la tristeza, alegría, disgusto, enojo, sorpresa, entre otras.","textoTres": "Con las fichas boca abajo, levantó una que refleje una emoción (6 fichas disponibles) y otra que refleje un lugar o una persona (8 fichas disponibles). Luego charlamos y damos un ejemplo que incluya ambas. Podemos hablar de alguna situación que haya sucedido o simplemente imaginar, ¡No hay respuestas correctas o incorrectas!","aPartirDe": 4,"precio": 1000,"imagenUno": "emociones_1.jpg","altUno": "","imagenDos": "emociones_2.jpg","altDos": "","imagenTres": "emociones_3.jpg","altTres": ""},
+  {"id": 16,"nombre": "MEMOTEST","textoUno": "Un rompecabezas como este nos invita a dejar volar la imaginación y construir diferentes formas:","textoDos": "¿Una jirafa? ¡Por supuesto! ¿Una pirámide? ¡Por qué no! ¿Una gallina? ¡Intentémoslo!","textoTres": "Creando con estas 7 piezas y 20 tarjetas de instrucciones, entrenamos nuestras habilidades motrices y también las intelectuales. Fomentamos la orientación y estructuración espacial, estimulamos la creatividad, mejoramos la atención y desarrollamos el conocimiento lógico-matemático. No hay límites, ¡Desafiate a crear alguna nueva forma que no se incluya en las tarjetas! Podés compartirnos tu nueva creación en nuestra redes: @jugandoaprendook así los demás pueden probarlo también.","aPartirDe": 5,"precio": 1000,"imagenUno": "tangram_1.jpg","altUno": "","imagenDos": "tangram_2.jpg","altDos": "","imagenTres": "tangram_3.jpg","altTres": ""},
+  {"id": 17,"nombre": "MIS BLOQUES","textoUno": "Las emociones son respuestas automáticas que nos permiten adaptarnos a las distintas situaciones.","textoDos": "Es importante conocerlas y saber que no existen emociones buenas ni malas. Con las fichas de EMOCIONES aprendo a identificarlas, a reconocerlas y entiendo qué es lo que siento cuando experimento alguna de ellas como la tristeza, alegría, disgusto, enojo, sorpresa, entre otras.","textoTres": "Con las fichas boca abajo, levantó una que refleje una emoción (6 fichas disponibles) y otra que refleje un lugar o una persona (8 fichas disponibles). Luego charlamos y damos un ejemplo que incluya ambas. Podemos hablar de alguna situación que haya sucedido o simplemente imaginar, ¡No hay respuestas correctas o incorrectas!","aPartirDe": 4,"precio": 1000,"imagenUno": "emociones_1.jpg","altUno": "","imagenDos": "emociones_2.jpg","altDos": "","imagenTres": "emociones_3.jpg","altTres": ""},
+  {"id": 18,"nombre": "MONSTRUOS DE COLORES","textoUno": "Un rompecabezas como este nos invita a dejar volar la imaginación y construir diferentes formas:","textoDos": "¿Una jirafa? ¡Por supuesto! ¿Una pirámide? ¡Por qué no! ¿Una gallina? ¡Intentémoslo!","textoTres": "Creando con estas 7 piezas y 20 tarjetas de instrucciones, entrenamos nuestras habilidades motrices y también las intelectuales. Fomentamos la orientación y estructuración espacial, estimulamos la creatividad, mejoramos la atención y desarrollamos el conocimiento lógico-matemático. No hay límites, ¡Desafiate a crear alguna nueva forma que no se incluya en las tarjetas! Podés compartirnos tu nueva creación en nuestra redes: @jugandoaprendook así los demás pueden probarlo también.","aPartirDe": 5,"precio": 1000,"imagenUno": "tangram_1.jpg","altUno": "","imagenDos": "tangram_2.jpg","altDos": "","imagenTres": "tangram_3.jpg","altTres": ""}
+]

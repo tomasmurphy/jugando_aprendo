@@ -7891,6 +7891,19 @@ i {
   padding-right: 1rem;
   margin-top: 0.3rem; }
 
+.dropdown a {
+  font-family: "SF Pro";
+  font-style: normal;
+  font-weight: 510;
+  font-size: .8rem;
+  line-height: 17px;
+  text-decoration: none;
+  margin: 1rem; }
+  .dropdown a:hover {
+    transform: scale(1.1);
+    color: black;
+    font-weight: bold; }
+
 .navbar-collapse {
   flex-basis: 100%;
   flex-grow: 1;
@@ -7990,6 +8003,9 @@ footer {
       background-image: url("../img/97.JPG");
       height: 60vh;
       background-position: center -2rem; } }
+  @media screen and (min-width: 768px) and (min-width: 1000px) {
+    #inicio {
+      background-position: center -10rem; } }
   #inicio a {
     font-size: 5rem;
     margin-bottom: 5rem; }
@@ -8034,7 +8050,12 @@ footer {
   background: none;
   border: 0;
   opacity: 0.5;
-  transition: opacity 0.15s ease; }
+  transition: opacity 0.15s ease;
+  margin: -2.5%; }
+  @media screen and (min-width: 768px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+      margin: -5%; } }
 
 .titleSweet {
   font-family: "SF Pro";
@@ -8072,6 +8093,10 @@ input {
   letter-spacing: -0.3333333432674408px;
   text-align: left; }
 
+.botonera {
+  display: flex;
+  width: 100%; }
+
 .btnComprarEstilo {
   background: linear-gradient(0deg, #e9555e, #e9555e);
   color: #ffffff;
@@ -8084,8 +8109,28 @@ input {
   letter-spacing: -0.3333333432674408px;
   text-align: center;
   border: none;
-  border-radius: 0.5rem; }
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem; }
   .btnComprarEstilo:hover {
+    color: white;
+    transform: scale(1.1); }
+
+.btnSeguirEstilo {
+  background: #a3a3a3;
+  color: #ffffff;
+  width: 150px;
+  height: 33px;
+  font-family: "SF Pro";
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: -0.3333333432674408px;
+  text-align: center;
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem; }
+  .btnSeguirEstilo:hover {
     color: white;
     transform: scale(1.1); }
 
@@ -8106,7 +8151,8 @@ input {
 
 #conociendonos {
   margin-top: 6rem;
-  font-size: 1rem; }
+  font-size: 1rem;
+  margin-bottom: 3rem; }
   #conociendonos .conociendonos {
     height: 100%;
     display: flex;
@@ -8118,7 +8164,9 @@ input {
     @media screen and (min-width: 768px) {
       #conociendonos .conociendonos {
         position: sticky;
-        top: 5rem; } }
+        top: 5rem;
+        padding-left: 3%;
+        padding-right: 3%; } }
   #conociendonos .conociendonosFoto {
     display: flex;
     align-items: center;
@@ -8127,7 +8175,13 @@ input {
     padding-left: 6%;
     padding-right: 6%; }
     #conociendonos .conociendonosFoto img {
-      margin-bottom: 3rem; }
+      max-width: 500px;
+      margin-bottom: 2rem; }
+    @media screen and (min-width: 768px) {
+      #conociendonos .conociendonosFoto {
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-bottom: 0; } }
   #conociendonos .conociendonos_texto_salmon {
     color: #e9555e;
     font-size: 1;
@@ -8239,7 +8293,7 @@ input {
   opacity: 1; }
   @media screen and (min-width: 768px) {
     .margenModalFlecha {
-      margin: -6rem; } }
+      margin: -4rem; } }
 
 .modal-dialog {
   max-width: 600px; }
