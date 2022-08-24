@@ -7997,7 +7997,8 @@ footer {
   height: 50vh;
   display: flex;
   align-items: flex-end;
-  justify-content: center; }
+  justify-content: center;
+  /* boton azul siguiente */ }
   @media screen and (min-width: 768px) {
     #inicio {
       background-image: url("../img/97.JPG");
@@ -8006,11 +8007,63 @@ footer {
   @media screen and (min-width: 768px) and (min-width: 1000px) {
     #inicio {
       background-position: center -10rem; } }
-  #inicio a {
-    font-size: 5rem;
-    margin-bottom: 5rem; }
-    #inicio a i {
-      color: whitesmoke; }
+  #inicio .modal-body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    border-radius: .5rem; }
+    #inicio .modal-body ul {
+      list-style: none; }
+  #inicio .modal-dialog {
+    max-width: 730px; }
+  #inicio .modal-content {
+    background-color: white;
+    margin: 2rem;
+    padding: 1rem; }
+  #inicio label {
+    font-family: 'SF Pro';
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.3333333432674408px;
+    text-align: left; }
+    @media screen and (min-width: 768px) {
+      #inicio label {
+        font-size: 1.1rem; } }
+  #inicio .btnTest {
+    width: 97.01px;
+    height: 32.34px;
+    background-color: #71AADD;
+    border-radius: .5rem;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: .9rem;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.333333px;
+    color: #FFFFFF;
+    margin-left: 2rem; }
+    #inicio .btnTest:hover {
+      color: white;
+      transform: scale(1.1); }
+  #inicio .btnBanner {
+    margin: 0;
+    width: 251.81px;
+    height: 40px;
+    background: #E9555E;
+    border-radius: .5rem;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    align-content: center;
+    letter-spacing: -0.333333px;
+    color: #FFFFFF; }
+    #inicio .btnBanner:hover {
+      color: white;
+      transform: scale(1.1); }
 
 @media screen and (min-width: 768px) {
   .opaco {

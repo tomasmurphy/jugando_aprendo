@@ -20,14 +20,78 @@
       
     }
   }
-  a{
-    font-size: 5rem;
-    
-    margin-bottom: 5rem;
-    i{color: whitesmoke;
-      ;
+  // TEST 
+
+.modal-body{
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F5;
+  border-radius: .5rem;
+  ul{
+    list-style: none;
   }
-  }
+}
+.modal-dialog {
+  max-width: 730px;
+  
+}
+
+.modal-content{
+  background-color: white;
+  margin: 2rem;
+  padding: 1rem;
+}
+label{
+  font-family: 'SF Pro';
+font-size: .8rem;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: -0.3333333432674408px;
+text-align: left;
+@include desktop{
+  font-size: 1.1rem;
+}
+
+}
+/* boton azul siguiente */
+.btnTest{
+width: 97.01px;
+height: 32.34px;
+background-color: #71AADD;
+border-radius: .5rem;
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 600;
+font-size: .9rem;
+line-height: 17px;
+text-align: center;
+letter-spacing: -0.333333px;
+color: #FFFFFF;
+margin-left: 2rem;
+&:hover {
+  color: white;
+  transform: scale(1.1);
+}
+}
+.btnBanner{
+margin: 0;
+width: 251.81px;
+height: 40px;
+background: #E9555E;
+border-radius: .5rem;
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 1rem;
+text-align: center;
+align-content: center;
+letter-spacing: -0.333333px;
+color: #FFFFFF;
+&:hover {
+  color: white;
+  transform: scale(1.1);
+}
+}
 }
 .opaco {
   @include desktop {
@@ -342,4 +406,5 @@ input {
 }
 .modal-dialog {
   max-width: 600px;
+  
 }
