@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         this.cp = cp;
     }
   }
+ 
   let nuevoUsuario = ""
   // PRODUCTOS IMPORTADOS DE JSON
   const productosJson = '../js/productos.json'
@@ -17,26 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const crearItems = document.querySelector('#crearItems');
     const btnButton = document.querySelector("#button");
     let strProducto = "";
-    const btnCero = document.querySelector("#btnCero");
-    const btnCuatro = document.querySelector("#btnCuatro");
-    const btnCinco = document.querySelector("#btnCinco");
+    const btnCuatroMenos = document.querySelector("#btnCuatro");
+    const btnCuatroMas = document.querySelector("#btnCinco");
     // BOTONES 
-    btnCero.addEventListener("click", () => {
-      location.assign(`${window.location.pathname}#+0`)
-      traerId();
-    });
-    btnCuatro.addEventListener("click", () => {
-      location.assign(`${window.location.pathname}#+4`)
-      traerId();
-    });
-    btnCinco.addEventListener("click", () => {
-      location.assign(`${window.location.pathname}#+5`)
-      traerId();
-    });
-
-
-
-
+    window.addEventListener('hashchange', function() {
+      traerId()
+    }, false);
+  
     // CREAR MAIN DONDE CARGAR PRODUCTOS 
     const crearMain = document.createElement('main');
     crearMain.setAttribute("id", "items")
@@ -49,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const url = window.location;
       const hash = url.hash
       const id = hash.split("#")[1]
+      sessionStorage.setItem("id", id)
       cargarProductos(id);
     };
     function cargarProductos(filtro) {
@@ -65,15 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
         case undefined:
           var productosFiltrados = productos;
           break;
-
-        case "+0":
-          var productosFiltrados = productos.filter(a => a.aPartirDe >= 0);
+        case "-4":
+          var productosFiltrados = productos.filter(a => (a.aPartirDe < 4));
           break;
         case "+4":
-          var productosFiltrados = productos.filter(a => (a.aPartirDe >= 4) && (a.aPartirDe < 5));
-          break;
-        case "+5":
-          var productosFiltrados = productos.filter(a => a.aPartirDe >= 5);
+          var productosFiltrados = productos.filter(a => a.aPartirDe >= 4);
           break;
         case "eligiendo":
           let primero = sessionStorage.getItem("primero");
@@ -109,7 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
           const divProductosLink = document.createElement('a');
           divProductosLink.addEventListener("click", () => {
             location.assign(`${window.location.pathname}#${info.id}`)
-            traerId();
           });
           divProductosLink.appendChild(divProductosImagen)
           divProductosCardBody.appendChild(divProductosLink);
@@ -385,7 +369,8 @@ document.addEventListener('DOMContentLoaded', () => {
                   nuevoUsuario = new NuevoUsuario(nombre, direccion, cp);
                 localStorage.setItem("user", JSON.stringify(nuevoUsuario))
                 agregarAlCarrito()
-                let html = `https://api.whatsapp.com/send?phone=5492604530612&text=Hola%20Jugando%20Aprendo😀!%20Me%20interesa%20el%20juego%20🧩%20${strProducto}.%20Mi%20nombre%20es%20${nombre},%20vivo%20en%20${direccion}%20y%20el%20codigo%20postal%20es%20${cp}❤️`
+                let celu = screen.width < 990 ? "api" : "web";
+                let html = `https://${celu}.whatsapp.com/send?phone=5492604530612&text=Hola%20Jugando%20Aprendo😀!%20Me%20interesa%20el%20juego%20🧩%20${strProducto}.%20Mi%20nombre%20es%20${nombre},%20vivo%20en%20${direccion}%20y%20el%20codigo%20postal%20es%20${cp}❤️`
                 window.open((html), "_blank")
               }
 
@@ -441,6 +426,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return strProducto
     }
     traerId()
+
   };
   // INICIALIZAR EL FETCH 
   importarProductos()

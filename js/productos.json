@@ -8,11 +8,11 @@
     "aPartirDe": 4,
     "precio": 1400,
     "imagenUno": "emociones_1.jpg",
-    "altUno": "Sin foto",
+    "altUno": "EMOCIONES",
     "imagenDos": "emociones_2.jpg",
-    "altDos": "Sin foto",
+    "altDos": "EMOCIONES",
     "imagenTres": "emociones_3.jpg",
-    "altTres": "Sin foto"
+    "altTres": "EMOCIONES"
   },
   {
     "id": 2,
@@ -20,14 +20,14 @@
     "textoUno": "Un rompecabezas como este nos invita a dejar volar la imaginación y construir diferentes formas:",
     "textoDos": "¿Una jirafa? ¡Por supuesto! ¿Una pirámide? ¡Por qué no! ¿Una gallina? ¡Intentémoslo!",
     "textoTres": "Creando con estas 7 piezas y 20 tarjetas de instrucciones, entrenamos nuestras habilidades motrices y también las intelectuales. Fomentamos la orientación y estructuración espacial, estimulamos la creatividad, mejoramos la atención y desarrollamos el conocimiento lógico-matemático. No hay límites, ¡Desafiate a crear alguna nueva forma que no se incluya en las tarjetas! Podés compartirnos tu nueva creación en nuestra redes: @jugandoaprendook así los demás pueden probarlo también.",
-    "aPartirDe": 4,
+    "aPartirDe": 3,
     "precio": 1750,
     "imagenUno": "tangram_1.jpg",
-    "altUno": "Sin foto",
+    "altUno": "TANGRAM",
     "imagenDos": "tangram_2.jpg",
-    "altDos": "Sin foto",
+    "altDos": "TANGRAM",
     "imagenTres": "tangram_3.jpg",
-    "altTres": "Sin foto"
+    "altTres": "TANGRAM"
   },
   {
     "id": 3,
@@ -38,11 +38,11 @@
     "aPartirDe": 4,
     "precio": 1275,
     "imagenUno": "mis_letritas_1.jpg",
-    "altUno": "Sin foto",
+    "altUno": "MIS LETRITAS",
     "imagenDos": "mis_letritas_2.jpg",
-    "altDos": "Sin foto",
+    "altDos": "MIS LETRITAS",
     "imagenTres": "mis_letritas_3.jpg",
-    "altTres": "Sin foto"
+    "altTres": "MIS LETRITAS"
   },
   {
     "id": 4,
@@ -52,12 +52,12 @@
     "textoTres": "Contamos con 27 fichas de letra del abecedario, 27 fichas con grafismos de cada letra y  27 fichas de imágenes. Podemos desafiarnos a nombrar cada una de las letras, imitar sus sonidos, asociarlas con las imágenes, dibujar su forma, entre muchas otras opciones. Te invitamos a compartir en nuestras redes @jugandoaprendook una nueva palabra que hayas escrito con las fichas del ABC.",
     "aPartirDe": 4,
     "precio": 2400,
-    "imagenUno": "ABC_1.jpg",
-    "altUno": "Sin foto",
-    "imagenDos": "ABC_2.jpg",
-    "altDos": "Sin foto",
-    "imagenTres": "ABC_3.jpg",
-    "altTres": "Sin foto"
+    "imagenUno": "abc_1.jpg",
+    "altUno": "ABC",
+    "imagenDos": "abc_2.jpg",
+    "altDos": "ABC",
+    "imagenTres": "abc_3.jpg",
+    "altTres": "ABC"
   },
   {
     "id": 5,
@@ -68,11 +68,11 @@
     "aPartirDe": 6,
     "precio": 1500,
     "imagenUno": "conociendonos_1.jpg",
-    "altUno": "Sin foto",
+    "altUno": "CONOCIÉNDONOS",
     "imagenDos": "conociendonos_2.jpg",
-    "altDos": "Sin foto",
+    "altDos": "CONOCIÉNDONOS",
     "imagenTres": "conociendonos_3.jpg",
-    "altTres": "Sin foto"
+    "altTres": "CONOCIÉNDONOS"
   },
   {
     "id": 6,
@@ -83,11 +83,11 @@
     "aPartirDe": 6,
     "precio": 2400,
     "imagenUno": "el_que_busca_encuentra_1.jpg",
-    "altUno": "Sin foto",
+    "altUno": "EL QUE BUSCA ENCUENTRA",
     "imagenDos": "el_que_busca_encuentra_2.jpg",
-    "altDos": "Sin foto",
+    "altDos": "EL QUE BUSCA ENCUENTRA",
     "imagenTres": "el_que_busca_encuentra_3.jpg",
-    "altTres": "Sin foto"
+    "altTres": "EL QUE BUSCA ENCUENTRA"
   },
   {
     "id": 7,
@@ -98,11 +98,11 @@
     "aPartirDe": 4,
     "precio": 1900,
     "imagenUno": "quien_lo_ve_primero_1.jpg",
-    "altUno": "Sin foto",
+    "altUno": "QUIÉN LO VE PRIMERO",
     "imagenDos": "quien_lo_ve_primero_2.jpg",
-    "altDos": "Sin foto",
+    "altDos": "QUIÉN LO VE PRIMERO",
     "imagenTres": "quien_lo_ve_primero_3.jpg",
-    "altTres": "Sin foto"
+    "altTres": "QUIÉN LO VE PRIMERO"
   },
   {
     "id": 8,
@@ -113,11 +113,11 @@
     "aPartirDe": 4,
     "precio": 3600,
     "imagenUno": "circulo_goethe_1.jpg",
-    "altUno": "Sin foto",
+    "altUno": "CÍRCULO GOETHE",
     "imagenDos": "circulo_goethe_2.jpg",
-    "altDos": "Sin foto",
+    "altDos": "CÍRCULO GOETHE",
     "imagenTres": "circulo_goethe_3.jpg",
-    "altTres": "Sin foto"
+    "altTres": "CÍRCULO GOETHE"
   },
   {
     "id": 9,
@@ -128,11 +128,11 @@
     "aPartirDe": 2,
     "precio": 2300,
     "imagenUno": "enhebrando_1.jpg",
-    "altUno": "Sin foto",
+    "altUno": "ENHEBRANDO",
     "imagenDos": "enhebrando_2.jpg",
-    "altDos": "Sin foto",
+    "altDos": "ENHEBRANDO",
     "imagenTres": "enhebrando_3.jpg",
-    "altTres": "Sin foto"
+    "altTres": "ENHEBRANDO"
   },
   {
     "id": 10,
@@ -143,11 +143,11 @@
     "aPartirDe": 4,
     "precio": 2800,
     "imagenUno": "equilibrista_1.jpg",
-    "altUno": "Sin foto",
+    "altUno": "EQUILIBRISTA",
     "imagenDos": "equilibrista_2.jpg",
-    "altDos": "Sin foto",
+    "altDos": "EQUILIBRISTA",
     "imagenTres": "equilibrista_3.jpg",
-    "altTres": "Sin foto"
+    "altTres": "EQUILIBRISTA"
   },
   {
     "id": 11,
@@ -158,11 +158,11 @@
     "aPartirDe": 2,
     "precio": 2150,
     "imagenUno": "mi_familia_1.jpg",
-    "altUno": "Sin foto",
+    "altUno": "MI FAMILIA",
     "imagenDos": "mi_familia_2.jpg",
-    "altDos": "Sin foto",
+    "altDos": "MI FAMILIA",
     "imagenTres": "mi_familia_3.jpg",
-    "altTres": "Sin foto"
+    "altTres": "MI FAMILIA"
   },
   {
     "id": 12,
@@ -173,11 +173,11 @@
     "aPartirDe": 4,
     "precio": 2900,
     "imagenUno": "geometria_didactica_1.jpg",
-    "altUno": "Sin foto",
+    "altUno": "GEOMETRÍA DIDÁCTICA",
     "imagenDos": "geometria_didactica_2.jpg",
-    "altDos": "Sin foto",
+    "altDos": "GEOMETRÍA DIDÁCTICA",
     "imagenTres": "geometria_didactica_3.jpg",
-    "altTres": "Sin foto"
+    "altTres": "GEOMETRÍA DIDÁCTICA"
   },
   {
     "id": 13,
@@ -188,11 +188,11 @@
     "aPartirDe": 4,
     "precio": 950,
     "imagenUno": "memotest_20_1.jpg",
-    "altUno": "Sin foto",
+    "altUno": "MEMOTEST (20 FICHAS)",
     "imagenDos": "memotest_20_2.jpg",
-    "altDos": "Sin foto",
+    "altDos": "MEMOTEST (20 FICHAS)",
     "imagenTres": "memotest_20_3.jpg",
-    "altTres": "Sin foto"
+    "altTres": "MEMOTEST (20 FICHAS)"
   },
   {
     "id": 14,
@@ -203,11 +203,11 @@
     "aPartirDe": 0,
     "precio": 3800,
     "imagenUno": "mis_bloques_1.jpg",
-    "altUno": "Sin foto",
+    "altUno": "MIS BLOQUES",
     "imagenDos": "mis_bloques_2.jpg",
-    "altDos": "Sin foto",
+    "altDos": "MIS BLOQUES",
     "imagenTres": "mis_bloques_3.jpg",
-    "altTres": "Sin foto"
+    "altTres": "MIS BLOQUES"
   },
   {
     "id": 15,
@@ -218,11 +218,11 @@
     "aPartirDe": 0,
     "precio": 4150,
     "imagenUno": "monstruos_de_colores_1.jpg",
-    "altUno": "Sin foto",
+    "altUno": "MONSTRUOS DE COLORES",
     "imagenDos": "monstruos_de_colores_2.jpg",
-    "altDos": "Sin foto",
+    "altDos": "MONSTRUOS DE COLORES",
     "imagenTres": "monstruos_de_colores_3.jpg",
-    "altTres": "Sin foto"
+    "altTres": "MONSTRUOS DE COLORES"
   },
   {
     "id": 16,
@@ -233,11 +233,11 @@
     "aPartirDe": 4,
     "precio": 1450,
     "imagenUno": "memotest_40_1.jpg",
-    "altUno": "Sin foto",
+    "altUno": "MEMOTEST (40 FICHAS)",
     "imagenDos": "memotest_40_2.jpg",
-    "altDos": "Sin foto",
+    "altDos": "MEMOTEST (40 FICHAS)",
     "imagenTres": "memotest_40_3.jpg",
-    "altTres": "Sin foto"
+    "altTres": "MEMOTEST (40 FICHAS)"
   },
   {
     "id": 17,
@@ -247,12 +247,12 @@
     "textoTres": "Las posibilidades de juego son infinitas. Podemos construir, encajar, apilar y dar rienda suelta al juego simbólico que es la herramienta fundamental de aprendizaje durante la infancia.",
     "aPartirDe": 0,
     "precio": 2900,
-    "imagenUno": "arcoiris_waldorff_1.jpg",
-    "altUno": "Sin foto",
-    "imagenDos": "arcoiris_waldorff_2.jpg",
-    "altDos": "Sin foto",
-    "imagenTres": "arcoiris_waldorff_3.jpg",
-    "altTres": "Sin foto"
+    "imagenUno": "arcoiris_1.jpg",
+    "altUno": "ARCOIRIS WALDORFF",
+    "imagenDos": "arcoiris_2.jpg",
+    "altDos": "ARCOIRIS WALDORFF",
+    "imagenTres": "arcoiris_3.jpg",
+    "altTres": "ARCOIRIS WALDORFF"
   },
   {
     "id": 18,
@@ -263,25 +263,10 @@
     "aPartirDe": 0,
     "precio": 2900,
     "imagenUno": "arcoiris_nube_sol_1.jpg",
-    "altUno": "Sin foto",
+    "altUno": "ARCOIRIS NUBE-SOL",
     "imagenDos": "arcoiris_nube_sol_2.jpg",
-    "altDos": "Sin foto",
+    "altDos": "ARCOIRIS NUBE-SOL",
     "imagenTres": "arcoiris_nube_sol_3.jpg",
-    "altTres": "Sin foto"
-  },
-  {
-    "id": 19,
-    "nombre": "ARCOIRIS BABY",
-    "textoUno": "Estas 4 piezas de los colores más bonitos que atraparán nuestra atención, nos traen los más grandes beneficios cuando las comenzamos a combinar:",
-    "textoDos": "estimulan nuestra coordinación óculo-manual; nos ayuda a ordenar, clasificar y agrupar; desarrolla nuestra habilidades motoras, la posibilidad de diferenciar formas, tamaños y colores y fomenta la creatividad e imaginación.",
-    "textoTres": "Las posibilidades de juego son infinitas. Podemos construir, encajar, apilar y dar rienda suelta al juego simbólico que es la herramienta fundamental de aprendizaje durante la infancia.",
-    "aPartirDe": 0,
-    "precio": 1900,
-    "imagenUno": "arcoiris_baby_1.jpg",
-    "altUno": "Sin foto",
-    "imagenDos": "arcoiris_baby_2.jpg",
-    "altDos": "Sin foto",
-    "imagenTres": "arcoiris_baby_3.jpg",
-    "altTres": "Sin foto"
+    "altTres": "ARCOIRIS NUBE-SOL"
   }
 ]

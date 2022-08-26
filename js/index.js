@@ -11,15 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function cargarProductos(filtro) {
             
-            switch (filtro) {
-                case "carruselUno":
-                    var productosFiltrados = productos;
-                    break;
-            }
+                var productosCarouselUno = productos.filter(a => (a.id <= 9));;            
+                var productosCarouselDos = productos.filter(a => (a.id > 9));;
 
             
                 // CARRUSEL UNO
-                productos.forEach((info) => {
+                productosCarouselUno.forEach((info) => {
                     
                     const divItem = document.createElement('div');
                     divItem.classList.add('carousel-item');
@@ -49,11 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                 });
                 // CARRUSEL DOS 
-                productos.forEach((info) => {
+                productosCarouselDos.forEach((info) => {
                     
                     const divItem = document.createElement('div');
                     divItem.classList.add('carousel-item');
-                    if (info == productos[0]){
+                    if (info == productos[9]){
                         divItem.classList.add('active');
                         
                     }
@@ -99,7 +96,7 @@ cargarProductos()
         
             };
     // INICIALIZAR EL FETCH 
-    importarProductos("carruselUno")
+    importarProductos()
     
 });
 

@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {        const btnBurger = document.querySelector('#button');
+document.addEventListener('DOMContentLoaded', () => {        
+        const btnBurger = document.querySelector('#button');
         const burger = document.querySelector('#burger');
         const cruz = document.querySelector('#cruz');
         const logo = document.querySelector('#logo');
@@ -15,23 +16,27 @@ document.addEventListener('DOMContentLoaded', () => {        const btnBurger = d
                 logo.classList.add("desaparece")
             }
         } )
+        let icono = window.location.pathname.lastIndexOf('/') == 16 ? "." : "..";
+        console.log()
+        let celu = screen.width < 990 ? "api" : "web";
+        let link = `https://${celu}.whatsapp.com/send?phone=5492604530612&text=Hola%20Jugando%20Aprendo😀!`
+        
+        let contenidoWs = `
+        <img
+          class="whatsapp-icon"
+          src="${icono}/img/whatsapp.svg"
+          alt="ícono de whatsapp"
+      />`
 
-        let items = document.querySelectorAll('.carousel .carousel-item')
 
-    items.forEach((el) => {
-        const minPerSlide = 2
-        let next = el.nextElementSibling
-        for (var i=1; i<minPerSlide; i++) {
-            if (!next) {
-                // wrap carousel by using first child
-                next = items[0]
-              }
-            let cloneChild = next.cloneNode(true)
-            el.appendChild(cloneChild.children[0])
-            next = next.nextElementSibling
-        }
-    })
-    
+        const crearWs = document.querySelector('#whatsapp');
+        const cuerpoWs = document.createElement('a')
+        cuerpoWs.setAttribute("href", link)  
+        cuerpoWs.setAttribute('target', '_blank')
+        cuerpoWs.innerHTML = contenidoWs
+        crearWs.appendChild(cuerpoWs);
+        
+        
     })
 
     
