@@ -4,6 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 :root {
   --bs-blue: #0d6efd;
@@ -7895,7 +7896,7 @@ i {
     margin: 0;
     width: 251.81px;
     height: 40px;
-    background: #E9555E;
+    background: #e9555e;
     border-radius: .5rem;
     font-family: 'SF Pro';
     font-style: normal;
@@ -7904,7 +7905,9 @@ i {
     text-align: center;
     align-content: center;
     letter-spacing: -0.333333px;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+    opacity: .9; }
     #inicio .btnBanner:hover {
       color: white;
       transform: scale(1.1); }
@@ -7979,15 +7982,26 @@ input {
   letter-spacing: -0.3333333432674408px;
   text-align: left;
   border-radius: 0.5rem;
-  opacity: 0.5; }
+  opacity: 0.7; }
+  input::placeholder {
+    color: black;
+    opacity: .7; }
 
-.placeholder {
+textarea {
+  background-color: #a3a3a3;
+  border: none;
   font-family: "SF Pro";
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1rem;
   letter-spacing: -0.3333333432674408px;
-  text-align: left; }
+  text-align: center;
+  border-radius: 0.5rem;
+  opacity: 0.7;
+  padding: 1rem; }
+  textarea::placeholder {
+    color: black;
+    opacity: .7; }
 
 .botonera {
   display: flex;
@@ -8082,7 +8096,8 @@ input {
     color: #e9555e;
     font-size: 1;
     font-family: "SF Pro";
-    font-weight: 300; }
+    font-weight: 300;
+    text-decoration: none; }
   #conociendonos .conociendonos_texto_salmonFuerte {
     font-weight: 900; }
   #conociendonos .conociendonos_texto_simple {
@@ -8185,7 +8200,7 @@ input {
   max-height: 100%; }
 
 .margenModalFlecha {
-  margin: -2.5rem;
+  margin: -1.8rem;
   opacity: 1; }
   @media screen and (min-width: 768px) {
     .margenModalFlecha {

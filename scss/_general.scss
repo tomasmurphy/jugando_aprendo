@@ -91,7 +91,7 @@ margin-left: 2rem;
 margin: 0;
 width: 251.81px;
 height: 40px;
-background: #E9555E;
+background: #e9555e;
 border-radius: .5rem;
 font-family: 'SF Pro';
 font-style: normal;
@@ -101,6 +101,8 @@ text-align: center;
 align-content: center;
 letter-spacing: -0.333333px;
 color: #FFFFFF;
+margin-bottom: 1rem;
+opacity: .9;
 &:hover {
   color: white;
   transform: scale(1.1);
@@ -181,15 +183,28 @@ input {
   letter-spacing: -0.3333333432674408px;
   text-align: left;
   border-radius: 0.5rem;
-  opacity: 0.5;
+  opacity: 0.7;
+  &::placeholder{
+  color: black;
+  opacity: .7;
+  }
 }
-.placeholder {
-  font-family: "SF Pro";
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 20px;
-  letter-spacing: -0.3333333432674408px;
-  text-align: left;
+textarea{
+background-color: #a3a3a3;
+border: none;
+font-family: "SF Pro";
+font-size: 0.8rem;
+font-weight: 700;
+line-height: 1rem;
+letter-spacing: -0.3333333432674408px;
+text-align: center;
+border-radius: 0.5rem;
+opacity: 0.7;
+padding: 1rem;
+&::placeholder{
+color: black;
+opacity: .7;
+}
 }
 .botonera{
   display: flex;
@@ -294,6 +309,7 @@ input {
     font-size: 1;
     font-family: "SF Pro";
     font-weight: 300;
+    text-decoration: none;
   }
   .conociendonos_texto_salmonFuerte {
     font-weight: 900;
@@ -413,7 +429,7 @@ input {
 }
 
 .margenModalFlecha{
-  margin: -2.5rem;
+  margin: -1.8rem;
   opacity: 1;
   @include desktop{
     margin: -4rem;

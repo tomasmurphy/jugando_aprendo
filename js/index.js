@@ -13,14 +13,14 @@ document.addEventListener('DOMContentLoaded', () => {
             
                 var productosCarouselUno = productos.filter(a => (a.id <= 9));;            
                 var productosCarouselDos = productos.filter(a => (a.id > 9));;
-
+              
             
                 // CARRUSEL UNO
                 productosCarouselUno.forEach((info) => {
                     
                     const divItem = document.createElement('div');
                     divItem.classList.add('carousel-item');
-                    if (info == productos[0]){
+                    if (info == productosCarouselUno[0]){
                         divItem.classList.add('active');
                         
                     }
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                     const divItem = document.createElement('div');
                     divItem.classList.add('carousel-item');
-                    if (info == productos[9]){
+                    if (info == productosCarouselDos[0]){
                         divItem.classList.add('active');
                         
                     }
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const img = document.createElement('img');
                     img.classList.add('img-fluid');
                     img.setAttribute('src', `./img/productos/${info.imagenUno}`);
-                    img.setAttribute('alt', `${info.altUno}`);
+                    img.setAttribute('alt', `Foto del juego ${info.nombre}`);
                     const aLink = document.createElement('a');
                     aLink.setAttribute('href', `./secciones/jugando.html#${info.id}`)
                     
@@ -75,7 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     crearCarruselDos.appendChild(divItem);
                     
                 });
-                let items = document.querySelectorAll('.carousel .carousel-item')
+    let carouselUno= document.querySelector('#crearCarruselUno'); 
+    let items = carouselUno.querySelectorAll('.carousel .carousel-item')
 
     items.forEach((el) => {
     const cantFotos = screen.width < 768 ? 2 : 4;
@@ -91,7 +92,25 @@ document.addEventListener('DOMContentLoaded', () => {
         next = next.nextElementSibling
     }
 })
-            }        
+let carouselDos= document.querySelector('#crearCarruselDos'); 
+let itemsDos = carouselDos.querySelectorAll('.carousel .carousel-item')
+
+itemsDos.forEach((el) => {
+const cantFotos = screen.width < 768 ? 2 : 4;
+const minPerSlide = cantFotos 
+let next = el.nextElementSibling
+
+for (var i=1; i<minPerSlide; i++) {
+    if (!next) {
+        // wrap carousel by using first child
+        next = itemsDos[0]
+      }
+    let cloneChild = next.cloneNode(true)
+    el.appendChild(cloneChild.children[0])
+    next = next.nextElementSibling
+}
+})
+}        
 cargarProductos()
         
             };

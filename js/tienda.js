@@ -55,10 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
           var productosFiltrados = productos;
           break;
         case "-4":
-          var productosFiltrados = productos.filter(a => (a.aPartirDe < 4));
+          var productosFiltrados = productos.filter(a => (a.edad < 4));
           break;
         case "+4":
-          var productosFiltrados = productos.filter(a => a.aPartirDe >= 4);
+          var productosFiltrados = productos.filter(a => a.edad >= 4);
           break;
         case "eligiendo":
           let primero = sessionStorage.getItem("primero");
@@ -91,6 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const divProductosImagen = document.createElement('img');
           divProductosImagen.classList.add('img-fluid', 'mx-0', 'px-0', 'opaco');
           divProductosImagen.setAttribute('src', `../img/productos/${info.imagenUno}`);
+          divProductosImagen.setAttribute('alt', `Foto del juego ${info.nombre}`);
           const divProductosLink = document.createElement('a');
           divProductosLink.addEventListener("click", () => {
             location.assign(`${window.location.pathname}#${info.id}`)
@@ -110,23 +111,23 @@ document.addEventListener('DOMContentLoaded', () => {
                     class="carousel slide"
                     data-bs-ride="carousel"
                   >
-                    <div class="carousel-inner" id="crearCarruselUno" role="listbox">
+                    <div class="carousel-inner" id="crearCarrusel" role="listbox">
                       <img
                       class="carousel-item active img-fluid"
                       src="../img/productos/${info.imagenUno}"
-                      alt="${info.altUno}"
+                      alt="Foto del juego ${info.nombre}"
                       data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal"
                     />
                     <img
                       class="img-fluid carousel-item"
                       src="../img/productos/${info.imagenDos}"
-                      alt="${info.altDos}"
+                      alt="Foto del juego ${info.nombre}"
                       data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal"
                       />
                     <img
                       class="img-fluid carousel-item"
                       src="../img/productos/${info.imagenTres}"
-                      alt="${info.altTres}"
+                      alt="Foto del juego ${info.nombre}"
                       data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal"
                     />
                     </div>
@@ -168,20 +169,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 class="carousel slide"
                 data-bs-ride="carousel"
               >
-                <div class="carousel-inner" id="crearCarruselUno" role="listbox">
+                <div class="carousel-inner" id="crearCarrusel" role="listbox">
                   <img
                   class="carousel-item active img-fluid"
                   src="../img/productos/${info.imagenUno}"
-                  alt="${info.altUno}"
+                  alt="Foto del juego ${info.nombre}"
                 />
                 <img
                   class="img-fluid carousel-item"
                   src="../img/productos/${info.imagenDos}"
-                  alt="${info.altDos}"/>
+                  alt="Foto del juego ${info.nombre}"/>
                 <img
                   class="img-fluid carousel-item"
                   src="../img/productos/${info.imagenTres}"
-                  alt="${info.altTres}"
+                  alt="Foto del juego ${info.nombre}"
                 />
                 </div>
                 
@@ -232,28 +233,28 @@ document.addEventListener('DOMContentLoaded', () => {
           img1.setAttribute("data-bs-target", "#exampleModal")
           img1.classList.add('img-fluid');
           img1.setAttribute('src', `../img/productos/${info.imagenUno}`);
-          img1.setAttribute('alt', `../img/productos/${info.altUno}`);
+          img1.setAttribute('alt', `Foto del juego ${info.nombre}`);
           const img2 = document.createElement('img');
           img2.setAttribute("data-bs-toggle", "modal")
           img2.setAttribute("data-toggle", "modal")
           img2.setAttribute("data-bs-target", "#exampleModal")
           img2.classList.add('img-fluid');
           img2.setAttribute('src', `../img/productos/${info.imagenDos}`);
-          img2.setAttribute('alt', `../img/productos/${info.altDos}`);
+          img2.setAttribute('alt', `Foto del juego ${info.nombre}`);
           const img3 = document.createElement('img');
           img3.setAttribute("data-bs-toggle", "modal")
           img3.setAttribute("data-toggle", "modal")
           img3.setAttribute("data-bs-target", "#exampleModal")
           img3.classList.add('img-fluid');
           img3.setAttribute('src', `../img/productos/${info.imagenTres}`);
-          img3.setAttribute('alt', `../img/productos/${info.altTres}`);
+          img3.setAttribute('alt', `Foto del juego ${info.nombre}`);
           const cajaProducto = document.createElement('div')
           cajaProducto.classList.add('col-12', 'col-md-6', 'conociendonos')
           const cajaEdad = document.createElement('div')
           cajaEdad.classList.add('cajaEdad')
           const edad = document.createElement('p');
           edad.classList.add('textoEdad');
-          edad.textContent = `A partir de los ${info.aPartirDe} años`;
+          edad.textContent = `A partir de los ${info.edad} años`;
           const edadImg = document.createElement('img');
           edadImg.setAttribute('src', `../img/edad.png`);
           const titulo = document.createElement('p');
@@ -264,19 +265,16 @@ document.addEventListener('DOMContentLoaded', () => {
           precio.textContent = `$${info.precio} ARS`;
           const textoRojo = document.createElement('p');
           textoRojo.classList.add('texto', 'rojo');
-          textoRojo.textContent = `${info.textoUno}`;
-          const subInstrucciones = document.createElement('p');
-          subInstrucciones.classList.add('subtitulo');
-          subInstrucciones.textContent = ``;
+          textoRojo.textContent = `${info.textoRojo}`;
           const subContiene = document.createElement('p');
           subContiene.classList.add('subtitulo');
           subContiene.textContent = `¿Como jugamos?`;
           const texto = document.createElement('p');
           texto.classList.add('texto');
-          texto.innerHTML = `${info.textoDos}`;
+          texto.innerHTML = `${info.textoNegro}`;
           const textoContiene = document.createElement('p');
           textoContiene.classList.add('texto');
-          textoContiene.innerHTML = `${info.textoTres}`;
+          textoContiene.innerHTML = `${info.comoJugamos}`;
 
 
           const divProductosBoton = document.createElement('button');
@@ -398,7 +396,6 @@ document.addEventListener('DOMContentLoaded', () => {
           cajaProducto.appendChild(titulo)
           cajaProducto.appendChild(precio)
           cajaProducto.appendChild(textoRojo)
-          cajaProducto.appendChild(subInstrucciones)
           cajaProducto.appendChild(texto)
           cajaProducto.appendChild(subContiene)
           cajaProducto.appendChild(textoContiene)
@@ -430,4 +427,5 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   // INICIALIZAR EL FETCH 
   importarProductos()
+  localStorage.clear()
 });
