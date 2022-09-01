@@ -1,27 +1,27 @@
 {
-  "name": "emanuelvazquezsantana.com.ar",
+  "name": "jugandoaprendo.com.ar",
   "version": "1.0.0",
-  "description": "Página de artista de Paz Secundini",
+  "description": "Página de Juegos didácticos",
   "main": "index.html",
   "scripts": {
     "test": "none",
     "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-    "purgatorio": "purgecss --css css/main.css --content **/*.html -o css/reducido.css"
+    "purgatorio": "purgecss --css css/main.css --content **/*.html **/*.js -o css/reducido.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tomasmurphy/evs.git"
+    "url": "git+https://github.com/tomasmurphy/jugando_aprendo.git"
   },
   "keywords": [
-    "arte, artesania, fotografia, revelado organico, estenopeica, analogica, ceramica, escultura, bellas artes"
+    "Jugando aprendo pedagogia psicologia juego niños juegos de mesa"
   ],
-  "author": "Tomas Murphy",
+  "author": "Merlina Aguel Product Manager/ Daniela Sosa Community Manager/ Eliana Druetta UX/UI Graphic Designer / Nicolas Pérgola UX/UI Designer / Juán Pablo Accinelli FrontEnd Developer/ Tomás Murphy FrontEnd Developer",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tomasmurphy/desarrolloweb/issues"
+    "url": "https://github.com/tomasmurphy/jugando_aprendo/issues"
   },
-  "homepage": "https://github.com/tomasmurphy/desarrolloweb#readme",
+  "homepage": "https://github.com/tomasmurphy/jugando_aprendo#readme",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "animate.css": "^4.1.1",

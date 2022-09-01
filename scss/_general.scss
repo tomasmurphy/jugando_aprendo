@@ -15,7 +15,7 @@ i{
 @import "_variables.scss";
 /* INICIO  */
 #inicio {
-  background-image: url("../img/97.JPG");
+  background-image: url("../img/fondoBanner.jpg");
   background-position: center 2rem ;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -26,7 +26,7 @@ i{
   align-items: flex-end;
   justify-content: center;
   @include desktop{
-    background-image: url("../img/97.JPG");
+    background-image: url("../img/fondoBanner.jpg");
     height: 60vh;
     background-position: center -2rem;
     @include gigante{
@@ -163,12 +163,11 @@ opacity: .9;
   text-align: left;
   color: black;
   padding-left: 0.5rem;
-  padding-top: 0.5rem;
 }
 .flexSweet {
   display: flex !important;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   @include desktop {
     // padding-left: 2rem;
   }

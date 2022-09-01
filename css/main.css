@@ -7833,7 +7833,7 @@ i {
 
 /* INICIO  */
 #inicio {
-  background-image: url("../img/97.JPG");
+  background-image: url("../img/fondoBanner.jpg");
   background-position: center 2rem;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -7846,7 +7846,7 @@ i {
   /* boton azul siguiente */ }
   @media screen and (min-width: 768px) {
     #inicio {
-      background-image: url("../img/97.JPG");
+      background-image: url("../img/fondoBanner.jpg");
       height: 60vh;
       background-position: center -2rem; } }
   @media screen and (min-width: 768px) and (min-width: 1000px) {
@@ -7964,13 +7964,12 @@ i {
   letter-spacing: -0.3333333432674408px;
   text-align: left;
   color: black;
-  padding-left: 0.5rem;
-  padding-top: 0.5rem; }
+  padding-left: 0.5rem; }
 
 .flexSweet {
   display: flex !important;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: flex-start; }
 
 input {
   background-color: #a3a3a3;
